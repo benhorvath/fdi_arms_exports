@@ -1,0 +1,341 @@
+---
+title: "Proposal: The Effect of U.S. Military Aid on FDI"
+author: "Ben Horvath"
+date: "November 1, 2018"
+output:
+  html_document:
+    theme: null
+    css: ../../static/architect.css
+    template: ../../static/architect.html
+    pandoc_args: [
+      "--mathjax", "",
+      "--variable", "mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"]
+  pdf_document:
+    keep_tex: yes
+fontsize: 11pt
+geometry: null
+fontfamily: mathpazo
+fontfamilyoptions: osf,sc
+linestretch: 1.05
+header-includes:
+  \usepackage{eulervm}
+---
+
+```{r setup, include=FALSE, warning=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# setwd("~/Dropbox/Documents/school/grad/606/fdi_arms_exports")
+```
+
+Load libraries:
+
+```{r, warning=FALSE, message=FALSE}
+library(dplyr)
+library(readxl)
+library(stringr)
+library(tidyr)
+```
+
+# TODO
+
+0. Other variables: GDP, distance between capitals, yearly percent gdp growth
+
+
+
+1. Create a mapping to convert some country names to some standard to create more samples
+
+2. Fill in NAs in master dataset with 0s or 1s or some default value
+
+3. Attempt three models: regular `lm`, `plm` for panel data, and the original two-step least squares
+
+
+Note on two-stage least squares:
+
+1. Author first developed a _troop_ model: 
+
+$$troops \sim conflict_{-1} + alliance_{-1} + polity_{-1} + warsaw\_pact_{-1} + cold\_war_{-1} + log(pop_{-1}) + reagan_{-1} + south_korea + vietnam + philippines$$
+2. Then plugged the results of that model into a _trade_ model with some other variables:
+
+$$trade \sim troops + growth_{-1} + gdp_{-1} + distance + alliance_{-1}$$
+
+* both models including intercepts
+
+# Introduction
+
+I took a 200-level 'methods in political science' class in the spring semester of 2009, as part of an undergraduate degree in political science. One assignment was to write a proposal for empirical research, though we weren't required to necessarily carry out the analysis.
+
+Biglaiser and DeRouen (2007) and Little and Leblang (2004) had found that 'the presence of U.S. troops serves as a "catalyst" for U.S. outgoing foreign direct investment (FDI), that is, FDI follows the flag.' My proposal, 'The Effect of U.S. Military Aid on Foreign Direct Investment Decisions,' was to test if U.S. arms exports had a similar effect on FDI as U.S. troops. I located the appropriate data, and noted a number of other variables that would need to be controlled for: alliances, the presence of conflict, the Cold War and outliers like Vietnam, regime type (democratic, autocratic, etc.), and population size.
+
+For methodology, I wrote, simply, 'To test these associations, some kind of regression would be used, with an appropriate significance test.' I don't believe I really knew what a regression was, I'd just noticed how popular it was in the political science literature.
+
+Nine years later, I am much more sophisticated statistically, and would like to see how my college sophomore intuition faired.
+
+#### References 
+
+* Glenn Biglaiser and Karl DeRouen, Jr. (2007), 'Following the flag: Troop deployment and US foreign direct investment,' _International Studies Quarterly_ 51, no. 4: 835-854.
+
+* Andrea Little and David Leblang (2004), 'Military securities: Financial flows and the deployment of US troops,' in _Annual Meeting of the American Political Science Association_, pp. 2-5.
+
+
+
+# Data Sources
+
+FDI data for U.S. outflows can be had from the OECD web site, from 2003 to 2013. These years will bound this study temporally:  https://stats.oecd.org/index.aspx?DataSetCode=FDI_FLOW_PARTNER (2003-2013)
+
+The Stockholm International Peace Research Institute maintains a database of arms transfers: https://www.sipri.org/databases/armstransfers
+
+Yearly population for most countries is available from the UN: https://population.un.org/wpp/Download/Standard/Population/
+
+Political scientists testing hypotheses on armed conflict frequently use the Armed Conflict dataset, available at: http://ucdp.uu.se/downloads/#d3
+
+The Polity dataset encodes regime type in a range from perfectly democratic to perfectly autocratic for most countries from 1800 on. Specifically I will use the Polity2 variable: http://www.systemicpeace.org/inscrdata.html,
+user manual: http://www.systemicpeace.org/inscr/p4manualv2017.pdf
+
+The Correlates of War project maintains a data set encoding international alliances in 'dyadic' form yearly: http://www.correlatesofwar.org/data-sets/formal-alliances
+
+Kristian Gleditsch developed a data set containing the distance between capital cities, which we'll use to proxy distance: http://ksgleditsch.com/data-5.html, using this system of country codes: http://ksgleditsch.com/statelist.html
+
+GDP data is available from the World Bank: https://data.worldbank.org/indicator/NY.GDP.MKTP.CD
+
+
+
+# Data Collection and Preparation
+
+## Collecting Data
+
+The goal will be to combine this data in a clean format, for as many countries as possible between 2003 and 2013.
+
+Filter the dataset to only include outflow numbers. The data is a few different currencies; rather than try conversions, I will simply exclude those that aren't in USD. This still leaves plenty of data for analysis.
+
+### FDI
+
+```{r}
+fdi <- read.csv('../data/raw/FDI_FLOW_PARTNER_28102018214703504.csv',
+                stringsAsFactors=FALSE)
+colnames(fdi) <- tolower(colnames(fdi))
+
+# we are only interested in outflow, from the U.S. to other countries
+fdi <- fdi %>% 
+    filter(reporting.country == 'United States',
+           type.of.fdi == 'Outward',
+           cur == 'USD')
+```
+
+The data also includes various aggregated rows, including regions like GULF ARABIAN COUNTRIES, these must be filtered out as well.
+
+```{r}
+`%not in%` <- function (x, table) is.na(match(x, table, nomatch=NA_integer_))
+
+aggregations <- c('ACP countries', 'AFRICA', 'African ACP countries', 'AMERICA', 'ASEAN countries', 'ASIA', 'BALTIC COUNTRIES', 'BLEU', 'Caribbean ACP countries', 'CENTRAL AMERICA', 'EU15', 'EU25', 'EUROPE', 'Other territories', 'GULF ARABIAN COUNTRIES', 'MERCOSUR', 'Mediterranean Basin countries', 'NAFTA', 'NEAR AND MIDDLE EAST', 'NICs1', 'NICs2A', 'NICs2LA', 'NORTH AFRICA', 'NORTH AMERICA', 'OCEANIA & POLAR REGIONS', 'OECD', 'OPEC countries', 'OTHER AFRICAN COUNTRIES (Excluding North Africa)', 'OTHER ASIAN COUNTRIES (Excluding Near and Middle East)', 'Other Central/Eastern Europe', 'NEAR AND MIDDLE EAST COUNTRIES OTHER THAN GULF STATES', 'Pacific ACP countries', 'SOUTH AMERICA', 'TOTAL WORLD', 'EUROPE Unallocated', 'EUROPE (Excluding OECD countries)', 'AFRICA Unallocated', 'North Africa - Unallocated', 'Africa excluding North African countries- Unallocated', 'AMERICA Unallocated', 'Central America - Unallocated', 'CENTRAL AMERICA (Excluding OECD countries)', 'South America - Unallocated', 'ASIA Unallocated', 'ASIA (Excluding OECD countries)', 'Near and Middle East - Unallocated', 'Gulf Arabian countries - Unallocated', 'Near and Middle East countries excluding Gulf states - Unallocated', 'Other Asian countries - Unallocated', 'OTHER ASIAN COUNTRIES (Excluding Near and Middle East and OECD countries)', 'Oceania & Polar Regions - Unallocated', 'OCEANIA & POLAR REGIONS (Excluding OECD countries)', 'TOTAL WORLD Unallocated', 'TOTAL WORLD (Excluding OECD countries)', 'OECD - Unallocated', 'NORTH AMERICA (Excluding OECD countries)', 'AMERICA (Excluding OECD countries)', 'Economic zones', 'EU27', 'SOUTH AMERICA (Excluding OECD countries)', 'NEAR AND MIDDLE EAST (Excluding OECD countries)', 'CIS countries', 'EFTA')
+
+fdi <- fdi %>% filter(partner.country %not in% aggregations)
+```
+
+Clean up the columns a bit:
+
+```{r}
+us_fdi <- fdi %>%
+    select(year, partner.country, value) %>%
+    mutate(value = value * 1000000) %>%
+    arrange(year, partner.country)
+colnames(us_fdi) <- c('year', 'country', 'fdi')
+rm(fdi)
+
+write.table(us_fdi, '../data/clean/fdi.tsv', row.names=FALSE, sep='\t')
+
+head(us_fdi)
+```
+
+
+
+### Arms Transfers
+
+```{r}
+# not really an Excel file!
+arms_raw <- read.csv('../data/raw/TIV-Export-USA-2003-2013.csv.xls', skip=10, 
+                 header=TRUE)
+arms_raw$Total <- NULL
+colnames(arms_raw)[1] <- 'country'
+
+arms_exports <- arms_raw %>%
+    gather(year, arms_exports, X2003:X2013, na.rm=TRUE) %>%
+    mutate(year=as.integer(str_remove(year, 'X'))) %>%
+    arrange(country, year)
+colnames(arms_exports)[3] <- 'arms_exports'
+rm(arms_raw)
+
+write.table(arms_exports, '../data/clean/arms_exports.tsv', row.names=FALSE, sep='\t')
+
+head(arms_exports)
+```
+
+
+
+### Population
+
+```{r}
+pop_raw <- read_xlsx('../data/raw/WPP2017_POP_F01_1_TOTAL_POPULATION_BOTH_SEXES.xlsx',
+                     skip=16, col_names=TRUE) %>%
+    select(3, `2003`:`2013`)
+colnames(pop_raw)[1] <- 'country'
+
+pop_aggs <- c('WORLD', 'More developed regions', 'Less developed regions', 'Least developed countries', 'Less developed regions, excluding least developed countries', 'Less developed regions, excluding China', 'High-income countries', 'Middle-income countries', 'Upper-middle-income countries', 'Lower-middle-income countries', 'Low-income countries', 'Sub-Saharan Africa', 'AFRICA', 'Middle Africa', 'Eastern Africa', 'Western Sahara', 'Southern Africa', 'ASIA', 'Eastern Asia', 'Southern Asia', 'South-Eastern Asia', 'EUROPE', 'Eastern Europe', 'Northern Europe', 'Southern Europe', 'Western Europe', 'NORTHERN AMERICA', 'OCEANIA', 'Central Asia', 'LATIN AMERICA AND THE CARIBBEAN', 'South-Central Asia', 'Western Africa', 'Northern Africa')
+
+pop <- pop_raw %>% 
+    filter(country %not in% pop_aggs) %>%
+    gather(year, population, `2003`:`2013`) %>%
+    mutate(population = population * 1000,
+           year = as.numeric(year))
+
+rm(pop_raw)
+write.table(pop, '../data/clean/population.tsv', row.names=FALSE, sep='\t')
+
+head(pop)
+```
+
+
+
+### Conflict
+
+```{r}
+conflict <- read.csv('../data/raw/ucdp-prio-acd-181.csv', 
+                         stringsAsFactors=FALSE) %>%
+    select(conflict_id, location, year) %>%
+    mutate(conflict = 1) %>%
+    arrange(conflict_id, location, year)
+colnames(conflict)[2] <- 'country'
+
+write.table(conflict, '../data/clean/conflict.tsv', row.names=FALSE, sep='\t')
+
+head(conflict)
+```
+
+
+
+### Regime Type
+
+```{r}
+regime <- read_xls('../data/raw/p4v2017.xls') %>%
+    select(country, year, polity2) %>%
+    arrange(country, year)
+
+write.table(regime, '../data/clean/regime.tsv', row.names=FALSE, sep='\t')
+
+head(regime)
+```
+
+
+
+### Alliances
+
+```{r}
+alliances <- read.csv('../data/raw/alliance_v4.1_by_dyad_yearly.csv',
+                      stringsAsFactors=FALSE) %>%
+    filter(state_name1 == 'United States of America',
+           year >= 2003,
+           year <= 2013) %>%
+    select(state_name2, year) %>%
+    mutate(alliance = 1)
+colnames(alliances)[1] <- 'country'
+
+write.table(alliances, '../data/clean/alliances.tsv', row.names=FALSE, sep='\t')
+
+head(alliances)
+```
+
+
+
+### Distance
+
+```{r}
+countries <- read.table('../data/raw/iisystem.dat', sep='\t',
+                        stringsAsFactors=FALSE)
+
+distance <- read.csv('../data/raw/capdist.csv', stringsAsFactors=FALSE) %>%
+    filter(ida == 'USA') %>%
+    inner_join(countries, by=c('idb'='V2')) %>%
+    select(V3, kmdist)
+colnames(distance) <- c('country', 'km_dist')
+
+rm(countries)
+write.table(distance, '../data/clean/distance.tsv', row.names=FALSE, sep='\t')
+
+head(distance)
+```
+
+
+
+### GDP
+
+Extracting two variables, absolute GDP and yearly percentage growth:
+
+```{r}
+gdp <- read.csv('../data/raw/API_NY.GDP.MKTP.CD_DS2_en_csv_v2_10203569.csv',
+                stringsAsFactors=FALSE, skip=4) %>%
+    select(Country.Name, X2002:X2013) %>%
+    gather(year, gdp, X2002:X2013) %>%
+    mutate(year = as.numeric(str_remove(year, 'X'))) %>%
+    arrange(Country.Name, year)
+colnames(gdp) <- c('country', 'year', 'gdp')
+
+gdp <- gdp %>% 
+    group_by(country) %>% 
+    mutate(gdp_l1 = lag(gdp, n=1, default=NA)) %>%
+    mutate(gdp_perc_growth = (gdp - gdp_l1) / gdp_l1) %>%
+    filter(year >= 2003, year <= 2013) %>%
+    select(country, year, gdp, gdp_perc_growth)
+
+write.table(gdp, '../data/clean/gdp.tsv', sep='\t', row.names=FALSE)
+
+head(gdp)
+```
+
+
+
+## Putting the Data Together
+
+```{r}
+df <- us_fdi %>%
+    inner_join(pop, by=c('country', 'year')) %>%
+    left_join(arms_exports, by=c('country', 'year')) %>%
+    left_join(conflict,  by=c('country', 'year')) %>%
+    left_join(regime, by=c('country', 'year')) %>%
+    left_join(alliances, by=c('country', 'year')) %>%
+    left_join(distance, by=c('country')) %>%
+    left_join(gdp, by=c('country', 'year')) %>%
+    select(-conflict_id) %>%
+    arrange(country, year)
+
+# Fill in missing variables to indicate absense of exports, etc.
+df <- df %>%
+    mutate(arms_exports = replace_na(arms_exports, 0),
+           conflict = replace_na(conflict, 0),
+           alliance = replace_na(alliance, 0))
+           
+
+write.table(df, '../data/clean/master_dataset.tsv', row.names=FALSE, sep='\t')
+
+head(df)
+```
+
+
+
+
+# Research Questions
+
+
+
+
+
+# Cases
+
+
+
+# Response and Explanatory Variables
+
+
+
+
+
+# Summary Statistics
+
+

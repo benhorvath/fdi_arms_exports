@@ -1,0 +1,2641 @@
+"country"	"year"	"population"
+"Burundi"	2003	6953113
+"Comoros"	2003	583211
+"Djibouti"	2003	758615
+"Eritrea"	2003	3738265
+"Ethiopia"	2003	72545144
+"Kenya"	2003	34130852
+"Madagascar"	2003	17279141
+"Malawi"	2003	12336687
+"Mauritius"	2003	1208994
+"Mayotte"	2003	166721
+"Mozambique"	2003	19716598
+"Réunion"	2003	771384
+"Rwanda"	2003	8680346
+"Seychelles"	2003	85910
+"Somalia"	2003	9836397
+"South Sudan"	2003	7501642
+"Uganda"	2003	26624820
+"United Republic of Tanzania"	2003	37149072
+"Zambia"	2003	11421984
+"Zimbabwe"	2003	12633897
+"Angola"	2003	18203369
+"Cameroon"	2003	16513822
+"Central African Republic"	2003	3981665
+"Chad"	2003	9353201
+"Congo"	2003	3502519
+"Democratic Republic of the Congo"	2003	51390033
+"Equatorial Guinea"	2003	694611
+"Gabon"	2003	1328146
+"Sao Tome and Principe"	2003	148372
+"Algeria"	2003	32403514
+"Egypt"	2003	73981942
+"Libya"	2003	5615952
+"Morocco"	2003	29843937
+"Sudan"	2003	29435944
+"Tunisia"	2003	9939678
+"Botswana"	2003	1804339
+"Lesotho"	2003	1918097
+"Namibia"	2003	1986535
+"South Africa"	2003	47648727
+"Swaziland"	2003	1087392
+"Benin"	2003	7520555
+"Burkina Faso"	2003	12654621
+"Cabo Verde"	2003	460147
+"Côte d'Ivoire"	2003	17679355
+"Gambia"	2003	1354194
+"Ghana"	2003	20446782
+"Guinea"	2003	9309848
+"Guinea-Bissau"	2003	1321202
+"Liberia"	2003	3116233
+"Mali"	2003	12005128
+"Mauritania"	2003	2957117
+"Niger"	2003	12656870
+"Nigeria"	2003	131972533
+"Saint Helena"	2003	4586
+"Senegal"	2003	10670990
+"Sierra Leone"	2003	5199549
+"Togo"	2003	5391401
+"China"	2003	1306343911
+"China, Hong Kong SAR"	2003	6782571
+"China, Macao SAR"	2003	460147
+"China, Taiwan Province of China"	2003	22306338
+"Dem. People's Republic of Korea"	2003	23538540
+"Japan"	2003	128067794
+"Mongolia"	2003	2469286
+"Republic of Korea"	2003	48265026
+"Kazakhstan"	2003	15232325
+"Kyrgyzstan"	2003	5012269
+"Tajikistan"	2003	6576877
+"Turkmenistan"	2003	4655741
+"Uzbekistan"	2003	25830659
+"Afghanistan"	2003	23064851
+"Bangladesh"	2003	139019001
+"Bhutan"	2003	623434
+"India"	2003	1108027848
+"Iran (Islamic Republic of)"	2003	68812713
+"Maldives"	2003	302209
+"Nepal"	2003	24950623
+"Pakistan"	2003	147703401
+"Sri Lanka"	2003	19215307
+"Brunei Darussalam"	2003	353389
+"Cambodia"	2003	12853124
+"Indonesia"	2003	220545214
+"Lao People's Democratic Republic"	2003	5579656
+"Malaysia"	2003	24688703
+"Myanmar"	2003	47624894
+"Philippines"	2003	83031954
+"Singapore"	2003	4249295
+"Thailand"	2003	64554952
+"Timor-Leste"	2003	960852
+"Viet Nam"	2003	82747662
+"Western Asia"	2003	196751174
+"Armenia"	2003	3017806
+"Azerbaijan"	2003	8361359
+"Bahrain"	2003	778711
+"Cyprus"	2003	993563
+"Georgia"	2003	4579082
+"Iraq"	2003	25627626
+"Israel"	2003	6349519
+"Jordan"	2003	5396774
+"Kuwait"	2003	2169118
+"Lebanon"	2003	3701464
+"Oman"	2003	2385255
+"Qatar"	2003	688586
+"Saudi Arabia"	2003	22556425
+"State of Palestine"	2003	3440799
+"Syrian Arab Republic"	2003	17415266
+"Turkey"	2003	66085803
+"United Arab Emirates"	2003	3741932
+"Yemen"	2003	19462086
+"Belarus"	2003	9740054
+"Bulgaria"	2003	7803881
+"Czechia"	2003	10239277
+"Hungary"	2003	10141956
+"Poland"	2003	38438826
+"Republic of Moldova"	2003	4171646
+"Romania"	2003	21728919
+"Russian Federation"	2003	144584695
+"Slovakia"	2003	5399886
+"Ukraine"	2003	47580559
+"Channel Islands"	2003	152038
+"Denmark"	2003	5386968
+"Estonia"	2003	1372909
+"Faeroe Islands"	2003	47974
+"Finland"	2003	5227103
+"Iceland"	2003	287952
+"Ireland"	2003	4049547
+"Isle of Man"	2003	74587
+"Latvia"	2003	2305775
+"Lithuania"	2003	3414352
+"Norway"	2003	4570106
+"Sweden"	2003	8951422
+"United Kingdom"	2003	59580222
+"Albania"	2003	3111005
+"Andorra"	2003	73182
+"Bosnia and Herzegovina"	2003	3779247
+"Croatia"	2003	4388946
+"Gibraltar"	2003	31720
+"Greece"	2003	11243567
+"Holy See"	2003	798
+"Italy"	2003	58147037
+"Malta"	2003	403211
+"Montenegro"	2003	614097
+"Portugal"	2003	10487113
+"San Marino"	2003	28494
+"Serbia"	2003	9302869
+"Slovenia"	2003	1988965
+"Spain"	2003	42653406
+"TFYR Macedonia"	2003	2053426
+"Austria"	2003	8175852
+"Belgium"	2003	10419032
+"France"	2003	60550097
+"Germany"	2003	81686495
+"Liechtenstein"	2003	34321
+"Luxembourg"	2003	447322
+"Monaco"	2003	32933
+"Netherlands"	2003	16200951
+"Switzerland"	2003	7291893
+"Caribbean"	2003	39453535
+"Anguilla"	2003	12021
+"Antigua and Barbuda"	2003	87293
+"Aruba"	2003	97017
+"Bahamas"	2003	315746
+"Barbados"	2003	272258
+"British Virgin Islands"	2003	22000
+"Caribbean Netherlands"	2003	13748
+"Cayman Islands"	2003	46028
+"Cuba"	2003	11244885
+"Curaçao"	2003	128021
+"Dominica"	2003	70093
+"Dominican Republic"	2003	8967760
+"Grenada"	2003	102375
+"Guadeloupe"	2003	434191
+"Haiti"	2003	8976552
+"Jamaica"	2003	2712511
+"Martinique"	2003	394508
+"Montserrat"	2003	4471
+"Puerto Rico"	2003	3787268
+"Saint Kitts and Nevis"	2003	47306
+"Saint Lucia"	2003	160973
+"Saint Vincent and the Grenadines"	2003	108350
+"Sint Maarten (Dutch part)"	2003	32346
+"Trinidad and Tobago"	2003	1284052
+"Turks and Caicos Islands"	2003	23410
+"United States Virgin Islands"	2003	108352
+"Central America"	2003	143991441
+"Belize"	2003	269130
+"Costa Rica"	2003	4125971
+"El Salvador"	2003	5971535
+"Guatemala"	2003	12500478
+"Honduras"	2003	7033821
+"Mexico"	2003	105640453
+"Nicaragua"	2003	5240879
+"Panama"	2003	3209174
+"South America"	2003	364013849
+"Argentina"	2003	38309379
+"Bolivia (Plurinational State of)"	2003	8810420
+"Brazil"	2003	182482149
+"Chile"	2003	15799542
+"Colombia"	2003	42152151
+"Ecuador"	2003	13289601
+"Falkland Islands (Malvinas)"	2003	2951
+"French Guiana"	2003	187619
+"Guyana"	2003	751857
+"Paraguay"	2003	5607950
+"Peru"	2003	26937738
+"Suriname"	2003	488332
+"Uruguay"	2003	3325637
+"Venezuela (Bolivarian Republic of)"	2003	25868523
+"Bermuda"	2003	64870
+"Canada"	2003	31627806
+"Greenland"	2003	56708
+"Saint Pierre and Miquelon"	2003	6255
+"United States of America"	2003	290027624
+"Australia/New Zealand"	2003	23719041
+"Australia"	2003	19696972
+"New Zealand"	2003	4022069
+"Melanesia"	2003	7698111
+"Fiji"	2003	816628
+"New Caledonia"	2003	225026
+"Papua New Guinea"	2003	6010724
+"Solomon Islands"	2003	446769
+"Vanuatu"	2003	198964
+"Micronesia"	2003	502769
+"Guam"	2003	157714
+"Kiribati"	2003	88895
+"Marshall Islands"	2003	52116
+"Micronesia (Fed. States of)"	2003	106816
+"Nauru"	2003	10106
+"Northern Mariana Islands"	2003	67422
+"Palau"	2003	19700
+"Polynesia"	2003	631739
+"American Samoa"	2003	59117
+"Cook Islands"	2003	19148
+"French Polynesia"	2003	248499
+"Niue"	2003	1755
+"Samoa"	2003	177662
+"Tokelau"	2003	1351
+"Tonga"	2003	99789
+"Tuvalu"	2003	9767
+"Wallis and Futuna Islands"	2003	14651
+"Burundi"	2004	7182451
+"Comoros"	2004	597228
+"Djibouti"	2004	770752
+"Eritrea"	2004	3858623
+"Ethiopia"	2004	74624405
+"Kenya"	2004	35074931
+"Madagascar"	2004	17802997
+"Malawi"	2004	12676038
+"Mauritius"	2004	1215677
+"Mayotte"	2004	172339
+"Mozambique"	2004	20312705
+"Réunion"	2004	781864
+"Rwanda"	2004	8818438
+"Seychelles"	2004	87484
+"Somalia"	2004	10116228
+"South Sudan"	2004	7787655
+"Uganda"	2004	27568436
+"United Republic of Tanzania"	2004	38249984
+"Zambia"	2004	11731746
+"Zimbabwe"	2004	12777511
+"Angola"	2004	18865716
+"Cameroon"	2004	16959081
+"Central African Republic"	2004	4055036
+"Chad"	2004	9710043
+"Congo"	2004	3605439
+"Democratic Republic of the Congo"	2004	53034217
+"Equatorial Guinea"	2004	724817
+"Gabon"	2004	1364205
+"Sao Tome and Principe"	2004	151969
+"Algeria"	2004	32831096
+"Egypt"	2004	75381899
+"Libya"	2004	5704759
+"Morocco"	2004	30179285
+"Sudan"	2004	30186341
+"Tunisia"	2004	10017601
+"Botswana"	2004	1829330
+"Lesotho"	2004	1933728
+"Namibia"	2004	2009228
+"South Africa"	2004	48247395
+"Swaziland"	2004	1095053
+"Benin"	2004	7750004
+"Burkina Faso"	2004	13030569
+"Cabo Verde"	2004	467664
+"Côte d'Ivoire"	2004	17997738
+"Gambia"	2004	1398573
+"Ghana"	2004	20986536
+"Guinea"	2004	9490229
+"Guinea-Bissau"	2004	1350345
+"Liberia"	2004	3176414
+"Mali"	2004	12391906
+"Mauritania"	2004	3042823
+"Niger"	2004	13127012
+"Nigeria"	2004	135393616
+"Saint Helena"	2004	4408
+"Senegal"	2004	10955944
+"Sierra Leone"	2004	5439695
+"Togo"	2004	5534598
+"China"	2004	1314007478
+"China, Hong Kong SAR"	2004	6802597
+"China, Macao SAR"	2004	471453
+"China, Taiwan Province of China"	2004	22462374
+"Dem. People's Republic of Korea"	2004	23729498
+"Japan"	2004	128213632
+"Mongolia"	2004	2496832
+"Republic of Korea"	2004	48498083
+"Kazakhstan"	2004	15385916
+"Kyrgyzstan"	2004	5037929
+"Tajikistan"	2004	6712841
+"Turkmenistan"	2004	4703398
+"Uzbekistan"	2004	26160326
+"Afghanistan"	2004	24118979
+"Bangladesh"	2004	141307489
+"Bhutan"	2004	640282
+"India"	2004	1126135777
+"Iran (Islamic Republic of)"	2004	69617100
+"Maldives"	2004	310423
+"Nepal"	2004	25309449
+"Pakistan"	2004	150780300
+"Sri Lanka"	2004	19372538
+"Brunei Darussalam"	2004	359523
+"Cambodia"	2004	13063377
+"Indonesia"	2004	223614649
+"Lao People's Democratic Republic"	2004	5664605
+"Malaysia"	2004	25174109
+"Myanmar"	2004	48073707
+"Philippines"	2004	84678493
+"Singapore"	2004	4370040
+"Thailand"	2004	65002231
+"Timor-Leste"	2004	996698
+"Viet Nam"	2004	83527678
+"Western Asia"	2004	201071347
+"Armenia"	2004	3000612
+"Azerbaijan"	2004	8448882
+"Bahrain"	2004	829848
+"Cyprus"	2004	1010410
+"Georgia"	2004	4533329
+"Iraq"	2004	26316609
+"Israel"	2004	6468827
+"Jordan"	2004	5535595
+"Kuwait"	2004	2207939
+"Lebanon"	2004	3863267
+"Oman"	2004	2444751
+"Qatar"	2004	758855
+"Saudi Arabia"	2004	23228890
+"State of Palestine"	2004	3504041
+"Syrian Arab Republic"	2004	17806638
+"Turkey"	2004	67007855
+"United Arab Emirates"	2004	4087931
+"Yemen"	2004	20017068
+"Belarus"	2004	9676902
+"Bulgaria"	2004	7743264
+"Czechia"	2004	10239536
+"Hungary"	2004	10115081
+"Poland"	2004	38396066
+"Republic of Moldova"	2004	4166337
+"Romania"	2004	21591164
+"Russian Federation"	2004	144044607
+"Slovakia"	2004	5399419
+"Ukraine"	2004	47215966
+"Channel Islands"	2004	153170
+"Denmark"	2004	5402761
+"Estonia"	2004	1363565
+"Faeroe Islands"	2004	48143
+"Finland"	2004	5242185
+"Iceland"	2004	291104
+"Ireland"	2004	4128749
+"Isle of Man"	2004	75341
+"Latvia"	2004	2278855
+"Lithuania"	2004	3381118
+"Norway"	2004	4598214
+"Sweden"	2004	8990639
+"United Kingdom"	2004	59884128
+"Albania"	2004	3097747
+"Andorra"	2004	76244
+"Bosnia and Herzegovina"	2004	3781287
+"Croatia"	2004	4383920
+"Gibraltar"	2004	31896
+"Greece"	2004	11270476
+"Holy See"	2004	797
+"Italy"	2004	58494704
+"Malta"	2004	405007
+"Montenegro"	2004	615145
+"Portugal"	2004	10528268
+"San Marino"	2004	28866
+"Serbia"	2004	9258343
+"Slovenia"	2004	1991430
+"Spain"	2004	43351668
+"TFYR Macedonia"	2004	2057047
+"Austria"	2004	8216805
+"Belgium"	2004	10480117
+"France"	2004	60886607
+"Germany"	2004	81715659
+"Liechtenstein"	2004	34596
+"Luxembourg"	2004	451819
+"Monaco"	2004	33314
+"Netherlands"	2004	16287182
+"Switzerland"	2004	7347247
+"Caribbean"	2004	39786576
+"Anguilla"	2004	12339
+"Antigua and Barbuda"	2004	88257
+"Aruba"	2004	98737
+"Bahamas"	2004	322526
+"Barbados"	2004	273091
+"British Virgin Islands"	2004	22541
+"Caribbean Netherlands"	2004	13894
+"Cayman Islands"	2004	47299
+"Cuba"	2004	11266941
+"Curaçao"	2004	128157
+"Dominica"	2004	70379
+"Dominican Republic"	2004	9102998
+"Grenada"	2004	102656
+"Guadeloupe"	2004	436885
+"Haiti"	2004	9119178
+"Jamaica"	2004	2728777
+"Martinique"	2004	396024
+"Montserrat"	2004	4644
+"Puerto Rico"	2004	3776359
+"Saint Kitts and Nevis"	2004	47971
+"Saint Lucia"	2004	162251
+"Saint Vincent and the Grenadines"	2004	108559
+"Sint Maarten (Dutch part)"	2004	32464
+"Trinidad and Tobago"	2004	1290535
+"Turks and Caicos Islands"	2004	25028
+"United States Virgin Islands"	2004	108086
+"Central America"	2004	146039807
+"Belize"	2004	276089
+"Costa Rica"	2004	4187038
+"El Salvador"	2004	6000775
+"Guatemala"	2004	12796925
+"Honduras"	2004	7204153
+"Mexico"	2004	106995583
+"Nicaragua"	2004	5309703
+"Panama"	2004	3269541
+"South America"	2004	368715053
+"Argentina"	2004	38728696
+"Bolivia (Plurinational State of)"	2004	8967741
+"Brazil"	2004	184738458
+"Chile"	2004	15973778
+"Colombia"	2004	42724163
+"Ecuador"	2004	13509647
+"Falkland Islands (Malvinas)"	2004	2954
+"French Guiana"	2004	196079
+"Guyana"	2004	751652
+"Paraguay"	2004	5703740
+"Peru"	2004	27273194
+"Suriname"	2004	493630
+"Uruguay"	2004	3324096
+"Venezuela (Bolivarian Republic of)"	2004	26327225
+"Bermuda"	2004	65065
+"Canada"	2004	31949417
+"Greenland"	2004	56861
+"Saint Pierre and Miquelon"	2004	6259
+"United States of America"	2004	292539324
+"Australia/New Zealand"	2004	24028867
+"Australia"	2004	19948429
+"New Zealand"	2004	4080438
+"Melanesia"	2004	7871221
+"Fiji"	2004	818354
+"New Caledonia"	2004	228883
+"Papua New Guinea"	2004	6161517
+"Solomon Islands"	2004	458324
+"Vanuatu"	2004	204143
+"Micronesia"	2004	502885
+"Guam"	2004	158099
+"Kiribati"	2004	90542
+"Marshall Islands"	2004	52074
+"Micronesia (Fed. States of)"	2004	106577
+"Nauru"	2004	10126
+"Northern Mariana Islands"	2004	65663
+"Palau"	2004	19804
+"Polynesia"	2004	637273
+"American Samoa"	2004	59264
+"Cook Islands"	2004	19522
+"French Polynesia"	2004	251775
+"Niue"	2004	1715
+"Samoa"	2004	178781
+"Tokelau"	2004	1273
+"Tonga"	2004	100406
+"Tuvalu"	2004	9894
+"Wallis and Futuna Islands"	2004	14643
+"Burundi"	2005	7423289
+"Comoros"	2005	611627
+"Djibouti"	2005	783254
+"Eritrea"	2005	3969007
+"Ethiopia"	2005	76727083
+"Kenya"	2005	36048288
+"Madagascar"	2005	18336724
+"Malawi"	2005	13039711
+"Mauritius"	2005	1222003
+"Mayotte"	2005	178098
+"Mozambique"	2005	20923070
+"Réunion"	2005	791598
+"Rwanda"	2005	8991735
+"Seychelles"	2005	88744
+"Somalia"	2005	10409925
+"South Sudan"	2005	8108877
+"Uganda"	2005	28543940
+"United Republic of Tanzania"	2005	39410545
+"Zambia"	2005	12052156
+"Zimbabwe"	2005	12940032
+"Angola"	2005	19552542
+"Cameroon"	2005	17420795
+"Central African Republic"	2005	4127910
+"Chad"	2005	10067009
+"Congo"	2005	3718243
+"Democratic Republic of the Congo"	2005	54751476
+"Equatorial Guinea"	2005	757317
+"Gabon"	2005	1403126
+"Sao Tome and Principe"	2005	155630
+"Algeria"	2005	33288437
+"Egypt"	2005	76778149
+"Libya"	2005	5792688
+"Morocco"	2005	30521070
+"Sudan"	2005	30911914
+"Tunisia"	2005	10102482
+"Botswana"	2005	1855852
+"Lesotho"	2005	1949543
+"Namibia"	2005	2032196
+"South Africa"	2005	48820586
+"Swaziland"	2005	1105873
+"Benin"	2005	7982225
+"Burkina Faso"	2005	13421930
+"Cabo Verde"	2005	474567
+"Côte d'Ivoire"	2005	18336303
+"Gambia"	2005	1444204
+"Ghana"	2005	21542009
+"Guinea"	2005	9679745
+"Guinea-Bissau"	2005	1380838
+"Liberia"	2005	3261230
+"Mali"	2005	12798763
+"Mauritania"	2005	3130720
+"Niger"	2005	13618449
+"Nigeria"	2005	138939478
+"Saint Helena"	2005	4275
+"Senegal"	2005	11251266
+"Sierra Leone"	2005	5658379
+"Togo"	2005	5683268
+"China"	2005	1321623490
+"China, Hong Kong SAR"	2005	6827761
+"China, Macao SAR"	2005	482559
+"China, Taiwan Province of China"	2005	22602886
+"Dem. People's Republic of Korea"	2005	23904167
+"Japan"	2005	128335767
+"Mongolia"	2005	2526446
+"Republic of Korea"	2005	48708497
+"Kazakhstan"	2005	15541457
+"Kyrgyzstan"	2005	5075380
+"Tajikistan"	2005	6854176
+"Turkmenistan"	2005	4754641
+"Uzbekistan"	2005	26512184
+"Afghanistan"	2005	25070798
+"Bangladesh"	2005	143431101
+"Bhutan"	2005	656639
+"India"	2005	1144118674
+"Iran (Islamic Republic of)"	2005	70421811
+"Maldives"	2005	318836
+"Nepal"	2005	25640287
+"Pakistan"	2005	153909667
+"Sri Lanka"	2005	19524558
+"Brunei Darussalam"	2005	365158
+"Cambodia"	2005	13270201
+"Indonesia"	2005	226712730
+"Lao People's Democratic Republic"	2005	5754026
+"Malaysia"	2005	25659393
+"Myanmar"	2005	48482614
+"Philippines"	2005	86274237
+"Singapore"	2005	4491042
+"Thailand"	2005	65425470
+"Timor-Leste"	2005	1026484
+"Viet Nam"	2005	84308843
+"Western Asia"	2005	205730682
+"Armenia"	2005	2981259
+"Azerbaijan"	2005	8538606
+"Bahrain"	2005	889168
+"Cyprus"	2005	1027658
+"Georgia"	2005	4486547
+"Iraq"	2005	27008426
+"Israel"	2005	6602970
+"Jordan"	2005	5714111
+"Kuwait"	2005	2276623
+"Lebanon"	2005	3986852
+"Oman"	2005	2511269
+"Qatar"	2005	864863
+"Saudi Arabia"	2005	23905654
+"State of Palestine"	2005	3576170
+"Syrian Arab Republic"	2005	18294611
+"Turkey"	2005	67903406
+"United Arab Emirates"	2005	4579562
+"Yemen"	2005	20582927
+"Belarus"	2005	9621543
+"Bulgaria"	2005	7683763
+"Czechia"	2005	10258176
+"Hungary"	2005	10086465
+"Poland"	2005	38362666
+"Republic of Moldova"	2005	4157699
+"Romania"	2005	21431018
+"Russian Federation"	2005	143618185
+"Slovakia"	2005	5398963
+"Ukraine"	2005	46892163
+"Channel Islands"	2005	154294
+"Denmark"	2005	5421702
+"Estonia"	2005	1355648
+"Faeroe Islands"	2005	48285
+"Finland"	2005	5258927
+"Iceland"	2005	294979
+"Ireland"	2005	4212977
+"Isle of Man"	2005	76118
+"Latvia"	2005	2251983
+"Lithuania"	2005	3344252
+"Norway"	2005	4632364
+"Sweden"	2005	9038623
+"United Kingdom"	2005	60286754
+"Albania"	2005	3079179
+"Andorra"	2005	78867
+"Bosnia and Herzegovina"	2005	3781530
+"Croatia"	2005	4378057
+"Gibraltar"	2005	32085
+"Greece"	2005	11301204
+"Holy See"	2005	798
+"Italy"	2005	58808483
+"Malta"	2005	406787
+"Montenegro"	2005	616388
+"Portugal"	2005	10565723
+"San Marino"	2005	29240
+"Serbia"	2005	9214986
+"Slovenia"	2005	1996281
+"Spain"	2005	44042632
+"TFYR Macedonia"	2005	2060272
+"Austria"	2005	8253650
+"Belgium"	2005	10546886
+"France"	2005	61233900
+"Germany"	2005	81671234
+"Liechtenstein"	2005	34852
+"Luxembourg"	2005	457842
+"Monaco"	2005	33793
+"Netherlands"	2005	16367158
+"Switzerland"	2005	7410308
+"Caribbean"	2005	40115790
+"Anguilla"	2005	12638
+"Antigua and Barbuda"	2005	89253
+"Aruba"	2005	100031
+"Bahamas"	2005	329249
+"Barbados"	2005	274009
+"British Virgin Islands"	2005	23168
+"Caribbean Netherlands"	2005	14403
+"Cayman Islands"	2005	48622
+"Cuba"	2005	11284253
+"Curaçao"	2005	129394
+"Dominica"	2005	70627
+"Dominican Republic"	2005	9237566
+"Grenada"	2005	102949
+"Guadeloupe"	2005	439552
+"Haiti"	2005	9263404
+"Jamaica"	2005	2744673
+"Martinique"	2005	397047
+"Montserrat"	2005	4778
+"Puerto Rico"	2005	3765399
+"Saint Kitts and Nevis"	2005	48611
+"Saint Lucia"	2005	163714
+"Saint Vincent and the Grenadines"	2005	108744
+"Sint Maarten (Dutch part)"	2005	32531
+"Trinidad and Tobago"	2005	1296934
+"Turks and Caicos Islands"	2005	26448
+"United States Virgin Islands"	2005	107793
+"Central America"	2005	148211558
+"Belize"	2005	283277
+"Costa Rica"	2005	4247841
+"El Salvador"	2005	6028961
+"Guatemala"	2005	13096028
+"Honduras"	2005	7373430
+"Mexico"	2005	108472228
+"Nicaragua"	2005	5379328
+"Panama"	2005	3330465
+"South America"	2005	373328523
+"Argentina"	2005	39145488
+"Bolivia (Plurinational State of)"	2005	9125409
+"Brazil"	2005	186917361
+"Chile"	2005	16147064
+"Colombia"	2005	43285634
+"Ecuador"	2005	13735233
+"Falkland Islands (Malvinas)"	2005	2939
+"French Guiana"	2005	203826
+"Guyana"	2005	750946
+"Paraguay"	2005	5795494
+"Peru"	2005	27610410
+"Suriname"	2005	498946
+"Uruguay"	2005	3325612
+"Venezuela (Bolivarian Republic of)"	2005	26784161
+"Bermuda"	2005	65130
+"Canada"	2005	32287980
+"Greenland"	2005	56951
+"Saint Pierre and Miquelon"	2005	6261
+"United States of America"	2005	295129501
+"Australia/New Zealand"	2005	24374258
+"Australia"	2005	20238903
+"New Zealand"	2005	4135355
+"Melanesia"	2005	8048467
+"Fiji"	2005	821817
+"New Caledonia"	2005	232686
+"Papua New Guinea"	2005	6314709
+"Solomon Islands"	2005	469885
+"Vanuatu"	2005	209370
+"Micronesia"	2005	502742
+"Guam"	2005	158402
+"Kiribati"	2005	92325
+"Marshall Islands"	2005	52055
+"Micronesia (Fed. States of)"	2005	106196
+"Nauru"	2005	10114
+"Northern Mariana Islands"	2005	63744
+"Palau"	2005	19906
+"Polynesia"	2005	642170
+"American Samoa"	2005	59118
+"Cook Islands"	2005	19710
+"French Polynesia"	2005	254886
+"Niue"	2005	1683
+"Samoa"	2005	179929
+"Tokelau"	2005	1208
+"Tonga"	2005	101041
+"Tuvalu"	2005	10027
+"Wallis and Futuna Islands"	2005	14568
+"Burundi"	2006	7675338
+"Comoros"	2006	626425
+"Djibouti"	2006	796208
+"Eritrea"	2006	4066648
+"Ethiopia"	2006	78850689
+"Kenya"	2006	37052050
+"Madagascar"	2006	18880268
+"Malawi"	2006	13429262
+"Mauritius"	2006	1228098
+"Mayotte"	2006	184031
+"Mozambique"	2006	21547463
+"Réunion"	2006	800543
+"Rwanda"	2006	9206580
+"Seychelles"	2006	89659
+"Somalia"	2006	10718317
+"South Sudan"	2006	8468152
+"Uganda"	2006	29550662
+"United Republic of Tanzania"	2006	40634948
+"Zambia"	2006	12383446
+"Zimbabwe"	2006	13124267
+"Angola"	2006	20262399
+"Cameroon"	2006	17899562
+"Central African Republic"	2006	4201758
+"Chad"	2006	10421597
+"Congo"	2006	3842365
+"Democratic Republic of the Congo"	2006	56543011
+"Equatorial Guinea"	2006	792217
+"Gabon"	2006	1444844
+"Sao Tome and Principe"	2006	159328
+"Algeria"	2006	33777915
+"Egypt"	2006	78159048
+"Libya"	2006	5881435
+"Morocco"	2006	30869346
+"Sudan"	2006	31607064
+"Tunisia"	2006	10196136
+"Botswana"	2006	1884238
+"Lesotho"	2006	1965662
+"Namibia"	2006	2055734
+"South Africa"	2006	49364582
+"Swaziland"	2006	1120514
+"Benin"	2006	8216896
+"Burkina Faso"	2006	13829177
+"Cabo Verde"	2006	480795
+"Côte d'Ivoire"	2006	18699435
+"Gambia"	2006	1491021
+"Ghana"	2006	22113425
+"Guinea"	2006	9881428
+"Guinea-Bissau"	2006	1412669
+"Liberia"	2006	3375838
+"Mali"	2006	13227064
+"Mauritania"	2006	3220653
+"Niger"	2006	14132064
+"Nigeria"	2006	142614094
+"Saint Helena"	2006	4201
+"Senegal"	2006	11556763
+"Sierra Leone"	2006	5848692
+"Togo"	2006	5837792
+"China"	2006	1329209094
+"China, Hong Kong SAR"	2006	6860376
+"China, Macao SAR"	2006	493320
+"China, Taiwan Province of China"	2006	22725478
+"Dem. People's Republic of Korea"	2006	24061097
+"Japan"	2006	128432994
+"Mongolia"	2006	2558012
+"Republic of Korea"	2006	48895845
+"Kazakhstan"	2006	15690861
+"Kyrgyzstan"	2006	5126730
+"Tajikistan"	2006	7000557
+"Turkmenistan"	2006	4810105
+"Uzbekistan"	2006	26890263
+"Afghanistan"	2006	25893450
+"Bangladesh"	2006	145368004
+"Bhutan"	2006	672228
+"India"	2006	1161977719
+"Iran (Islamic Republic of)"	2006	71227880
+"Maldives"	2006	327371
+"Nepal"	2006	25940618
+"Pakistan"	2006	157093993
+"Sri Lanka"	2006	19670151
+"Brunei Darussalam"	2006	370250
+"Cambodia"	2006	13474489
+"Indonesia"	2006	229838202
+"Lao People's Democratic Republic"	2006	5849356
+"Malaysia"	2006	26143566
+"Myanmar"	2006	48846474
+"Philippines"	2006	87809419
+"Singapore"	2006	4611901
+"Thailand"	2006	65824164
+"Timor-Leste"	2006	1048621
+"Viet Nam"	2006	85094617
+"Western Asia"	2006	210765462
+"Armenia"	2006	2958500
+"Azerbaijan"	2006	8630195
+"Bahrain"	2006	958414
+"Cyprus"	2006	1045509
+"Georgia"	2006	4438896
+"Iraq"	2006	27697912
+"Israel"	2006	6755211
+"Jordan"	2006	5934232
+"Kuwait"	2006	2377258
+"Lebanon"	2006	4057350
+"Oman"	2006	2582991
+"Qatar"	2006	1010382
+"Saudi Arabia"	2006	24578301
+"State of Palestine"	2006	3659363
+"Syrian Arab Republic"	2006	18914977
+"Turkey"	2006	68763405
+"United Arab Emirates"	2006	5242032
+"Yemen"	2006	21160534
+"Belarus"	2006	9575043
+"Bulgaria"	2006	7624959
+"Czechia"	2006	10298288
+"Hungary"	2006	10055897
+"Poland"	2006	38341036
+"Republic of Moldova"	2006	4144730
+"Romania"	2006	21243922
+"Russian Federation"	2006	143322933
+"Slovakia"	2006	5398541
+"Ukraine"	2006	46616389
+"Channel Islands"	2006	155411
+"Denmark"	2006	5444303
+"Estonia"	2006	1349297
+"Faeroe Islands"	2006	48383
+"Finland"	2006	5277570
+"Iceland"	2006	299728
+"Ireland"	2006	4303370
+"Isle of Man"	2006	76914
+"Latvia"	2006	2225223
+"Lithuania"	2006	3303671
+"Norway"	2006	4673070
+"Sweden"	2006	9096264
+"United Kingdom"	2006	60802801
+"Albania"	2006	3054331
+"Andorra"	2006	80991
+"Bosnia and Herzegovina"	2006	3779468
+"Croatia"	2006	4370699
+"Gibraltar"	2006	32296
+"Greece"	2006	11338770
+"Holy See"	2006	800
+"Italy"	2006	59079869
+"Malta"	2006	408563
+"Montenegro"	2006	617832
+"Portugal"	2006	10599951
+"San Marino"	2006	29614
+"Serbia"	2006	9173289
+"Slovenia"	2006	2003791
+"Spain"	2006	44725532
+"TFYR Macedonia"	2006	2063145
+"Austria"	2006	8284735
+"Belgium"	2006	10619567
+"France"	2006	61592884
+"Germany"	2006	81540353
+"Liechtenstein"	2006	35095
+"Luxembourg"	2006	465554
+"Monaco"	2006	34408
+"Netherlands"	2006	16440222
+"Switzerland"	2006	7481407
+"Caribbean"	2006	40441529
+"Anguilla"	2006	12903
+"Antigua and Barbuda"	2006	90301
+"Aruba"	2006	100832
+"Bahamas"	2006	335830
+"Barbados"	2006	275039
+"British Virgin Islands"	2006	23905
+"Caribbean Netherlands"	2006	15337
+"Cayman Islands"	2006	50031
+"Cuba"	2006	11296233
+"Curaçao"	2006	131898
+"Dominica"	2006	70807
+"Dominican Republic"	2006	9371338
+"Grenada"	2006	103259
+"Guadeloupe"	2006	442257
+"Haiti"	2006	9409457
+"Jamaica"	2006	2760279
+"Martinique"	2006	397565
+"Montserrat"	2006	4846
+"Puerto Rico"	2006	3755113
+"Saint Kitts and Nevis"	2006	49210
+"Saint Lucia"	2006	165407
+"Saint Vincent and the Grenadines"	2006	108907
+"Sint Maarten (Dutch part)"	2006	32517
+"Trinidad and Tobago"	2006	1303144
+"Turks and Caicos Islands"	2006	27642
+"United States Virgin Islands"	2006	107472
+"Central America"	2006	150528927
+"Belize"	2006	290747
+"Costa Rica"	2006	4308794
+"El Salvador"	2006	6056478
+"Guatemala"	2006	13397008
+"Honduras"	2006	7541406
+"Mexico"	2006	110092378
+"Nicaragua"	2006	5450211
+"Panama"	2006	3391905
+"South America"	2006	377848083
+"Argentina"	2006	39558890
+"Bolivia (Plurinational State of)"	2006	9283334
+"Brazil"	2006	189012412
+"Chile"	2006	16319792
+"Colombia"	2006	43835722
+"Ecuador"	2006	13967480
+"Falkland Islands (Malvinas)"	2006	2921
+"French Guiana"	2006	210673
+"Guyana"	2006	749601
+"Paraguay"	2006	5882796
+"Peru"	2006	27949944
+"Suriname"	2006	504307
+"Uruguay"	2006	3331043
+"Venezuela (Bolivarian Republic of)"	2006	27239168
+"Bermuda"	2006	65063
+"Canada"	2006	32645483
+"Greenland"	2006	56971
+"Saint Pierre and Miquelon"	2006	6260
+"United States of America"	2006	297827356
+"Australia/New Zealand"	2006	24759523
+"Australia"	2006	20573606
+"New Zealand"	2006	4185917
+"Melanesia"	2006	8230174
+"Fiji"	2006	827411
+"New Caledonia"	2006	236435
+"Papua New Guinea"	2006	6470272
+"Solomon Islands"	2006	481422
+"Vanuatu"	2006	214634
+"Micronesia"	2006	502441
+"Guam"	2006	158648
+"Kiribati"	2006	94260
+"Marshall Islands"	2006	52078
+"Micronesia (Fed. States of)"	2006	105684
+"Nauru"	2006	10071
+"Northern Mariana Islands"	2006	61688
+"Palau"	2006	20012
+"Polynesia"	2006	646361
+"American Samoa"	2006	58650
+"Cook Islands"	2006	19696
+"French Polynesia"	2006	257832
+"Niue"	2006	1662
+"Samoa"	2006	181094
+"Tokelau"	2006	1167
+"Tonga"	2006	101689
+"Tuvalu"	2006	10137
+"Wallis and Futuna Islands"	2006	14434
+"Burundi"	2007	7939573
+"Comoros"	2007	641620
+"Djibouti"	2007	809402
+"Eritrea"	2007	4153332
+"Ethiopia"	2007	81000409
+"Kenya"	2007	38085909
+"Madagascar"	2007	19433523
+"Malawi"	2007	13840969
+"Mauritius"	2007	1233911
+"Mayotte"	2007	190098
+"Mozambique"	2007	22188387
+"Réunion"	2007	808735
+"Rwanda"	2007	9447402
+"Seychelles"	2007	90281
+"Somalia"	2007	11038596
+"South Sudan"	2007	8856800
+"Uganda"	2007	30590487
+"United Republic of Tanzania"	2007	41923715
+"Zambia"	2007	12725974
+"Zimbabwe"	2007	13329909
+"Angola"	2007	20997687
+"Cameroon"	2007	18395389
+"Central African Republic"	2007	4275800
+"Chad"	2007	10775708
+"Congo"	2007	3976246
+"Democratic Republic of the Congo"	2007	58417562
+"Equatorial Guinea"	2007	829327
+"Gabon"	2007	1489193
+"Sao Tome and Principe"	2007	163101
+"Algeria"	2007	34300076
+"Egypt"	2007	79537253
+"Libya"	2007	5970362
+"Morocco"	2007	31225881
+"Sudan"	2007	32282526
+"Tunisia"	2007	10298087
+"Botswana"	2007	1914414
+"Lesotho"	2007	1982287
+"Namibia"	2007	2079915
+"South Africa"	2007	49887181
+"Swaziland"	2007	1138434
+"Benin"	2007	8454791
+"Burkina Faso"	2007	14252021
+"Cabo Verde"	2007	486438
+"Côte d'Ivoire"	2007	19085941
+"Gambia"	2007	1539116
+"Ghana"	2007	22700212
+"Guinea"	2007	10096727
+"Guinea-Bissau"	2007	1445958
+"Liberia"	2007	3512932
+"Mali"	2007	13675606
+"Mauritania"	2007	3312665
+"Niger"	2007	14668338
+"Nigeria"	2007	146417024
+"Saint Helena"	2007	4165
+"Senegal"	2007	11873557
+"Sierra Leone"	2007	6015417
+"Togo"	2007	5997385
+"China"	2007	1336800506
+"China, Hong Kong SAR"	2007	6898397
+"China, Macao SAR"	2007	503823
+"China, Taiwan Province of China"	2007	22833013
+"Dem. People's Republic of Korea"	2007	24203289
+"Japan"	2007	128505251
+"Mongolia"	2007	2591670
+"Republic of Korea"	2007	49062429
+"Kazakhstan"	2007	15841355
+"Kyrgyzstan"	2007	5189720
+"Tajikistan"	2007	7152385
+"Turkmenistan"	2007	4870137
+"Uzbekistan"	2007	27292375
+"Afghanistan"	2007	26616792
+"Bangladesh"	2007	147139191
+"Bhutan"	2007	686958
+"India"	2007	1179681239
+"Iran (Islamic Republic of)"	2007	72031103
+"Maldives"	2007	336070
+"Nepal"	2007	26214847
+"Pakistan"	2007	160332974
+"Sri Lanka"	2007	19810789
+"Brunei Darussalam"	2007	374864
+"Cambodia"	2007	13676693
+"Indonesia"	2007	232989141
+"Lao People's Democratic Republic"	2007	5949787
+"Malaysia"	2007	26625845
+"Myanmar"	2007	49171586
+"Philippines"	2007	89293490
+"Singapore"	2007	4732528
+"Thailand"	2007	66195615
+"Timor-Leste"	2007	1064973
+"Viet Nam"	2007	85889590
+"Western Asia"	2007	216126272
+"Armenia"	2007	2933056
+"Azerbaijan"	2007	8724304
+"Bahrain"	2007	1035891
+"Cyprus"	2007	1063712
+"Georgia"	2007	4390535
+"Iraq"	2007	28390433
+"Israel"	2007	6922685
+"Jordan"	2007	6193191
+"Kuwait"	2007	2503410
+"Lebanon"	2007	4086466
+"Oman"	2007	2662762
+"Qatar"	2007	1189633
+"Saudi Arabia"	2007	25252569
+"State of Palestine"	2007	3751866
+"Syrian Arab Republic"	2007	19632806
+"Turkey"	2007	69597281
+"United Arab Emirates"	2007	6044067
+"Yemen"	2007	21751605
+"Belarus"	2007	9536864
+"Bulgaria"	2007	7566949
+"Czechia"	2007	10356586
+"Hungary"	2007	10023887
+"Poland"	2007	38329585
+"Republic of Moldova"	2007	4128649
+"Romania"	2007	21036111
+"Russian Federation"	2007	143150142
+"Slovakia"	2007	5398326
+"Ukraine"	2007	46386355
+"Channel Islands"	2007	156513
+"Denmark"	2007	5469957
+"Estonia"	2007	1344072
+"Faeroe Islands"	2007	48448
+"Finland"	2007	5298014
+"Iceland"	2007	305200
+"Ireland"	2007	4398073
+"Isle of Man"	2007	77727
+"Latvia"	2007	2198518
+"Lithuania"	2007	3260091
+"Norway"	2007	4719648
+"Sweden"	2007	9163243
+"United Kingdom"	2007	61414660
+"Albania"	2007	3023907
+"Andorra"	2007	82683
+"Bosnia and Herzegovina"	2007	3774000
+"Croatia"	2007	4362266
+"Gibraltar"	2007	32510
+"Greece"	2007	11380897
+"Holy See"	2007	796
+"Italy"	2007	59313511
+"Malta"	2007	410324
+"Montenegro"	2007	619484
+"Portugal"	2007	10630120
+"San Marino"	2007	29977
+"Serbia"	2007	9135214
+"Slovenia"	2007	2013539
+"Spain"	2007	45393858
+"TFYR Macedonia"	2007	2065458
+"Austria"	2007	8311783
+"Belgium"	2007	10697835
+"France"	2007	61960950
+"Germany"	2007	81344457
+"Liechtenstein"	2007	35322
+"Luxembourg"	2007	474722
+"Monaco"	2007	35111
+"Netherlands"	2007	16507056
+"Switzerland"	2007	7560358
+"Caribbean"	2007	40763754
+"Anguilla"	2007	13150
+"Antigua and Barbuda"	2007	91381
+"Aruba"	2007	101220
+"Bahamas"	2007	342328
+"Barbados"	2007	276150
+"British Virgin Islands"	2007	24731
+"Caribbean Netherlands"	2007	16649
+"Cayman Islands"	2007	51483
+"Cuba"	2007	11303687
+"Curaçao"	2007	135498
+"Dominica"	2007	70950
+"Dominican Republic"	2007	9504353
+"Grenada"	2007	103586
+"Guadeloupe"	2007	444910
+"Haiti"	2007	9556889
+"Jamaica"	2007	2775467
+"Martinique"	2007	397577
+"Montserrat"	2007	4889
+"Puerto Rico"	2007	3745258
+"Saint Kitts and Nevis"	2007	49783
+"Saint Lucia"	2007	167288
+"Saint Vincent and the Grenadines"	2007	109047
+"Sint Maarten (Dutch part)"	2007	32439
+"Trinidad and Tobago"	2007	1309260
+"Turks and Caicos Islands"	2007	28640
+"United States Virgin Islands"	2007	107141
+"Central America"	2007	152971868
+"Belize"	2007	298407
+"Costa Rica"	2007	4369469
+"El Salvador"	2007	6083475
+"Guatemala"	2007	13700286
+"Honduras"	2007	7707972
+"Mexico"	2007	111836346
+"Nicaragua"	2007	5522106
+"Panama"	2007	3453807
+"South America"	2007	382277872
+"Argentina"	2007	39970224
+"Bolivia (Plurinational State of)"	2007	9441444
+"Brazil"	2007	191026637
+"Chile"	2007	16491687
+"Colombia"	2007	44374572
+"Ecuador"	2007	14205453
+"Falkland Islands (Malvinas)"	2007	2907
+"French Guiana"	2007	216785
+"Guyana"	2007	747869
+"Paraguay"	2007	5966159
+"Peru"	2007	28292724
+"Suriname"	2007	509705
+"Uruguay"	2007	3339741
+"Venezuela (Bolivarian Republic of)"	2007	27691965
+"Bermuda"	2007	64892
+"Canada"	2007	33019932
+"Greenland"	2007	56927
+"Saint Pierre and Miquelon"	2007	6261
+"United States of America"	2007	300595175
+"Australia/New Zealand"	2007	25179815
+"Australia"	2007	20946664
+"New Zealand"	2007	4233151
+"Melanesia"	2007	8415756
+"Fiji"	2007	834812
+"New Caledonia"	2007	240129
+"Papua New Guinea"	2007	6627922
+"Solomon Islands"	2007	492940
+"Vanuatu"	2007	219953
+"Micronesia"	2007	502012
+"Guam"	2007	158855
+"Kiribati"	2007	96311
+"Marshall Islands"	2007	52137
+"Micronesia (Fed. States of)"	2007	105078
+"Nauru"	2007	10002
+"Northern Mariana Islands"	2007	59513
+"Palau"	2007	20116
+"Polynesia"	2007	649915
+"American Samoa"	2007	57903
+"Cook Islands"	2007	19511
+"French Polynesia"	2007	260594
+"Niue"	2007	1651
+"Samoa"	2007	182286
+"Tokelau"	2007	1141
+"Tonga"	2007	102357
+"Tuvalu"	2007	10243
+"Wallis and Futuna Islands"	2007	14229
+"Burundi"	2008	8212264
+"Comoros"	2008	657229
+"Djibouti"	2008	822934
+"Eritrea"	2008	4232636
+"Ethiopia"	2008	83184892
+"Kenya"	2008	39148416
+"Madagascar"	2008	19996469
+"Malawi"	2008	14271234
+"Mauritius"	2008	1239293
+"Mayotte"	2008	196279
+"Mozambique"	2008	22846758
+"Réunion"	2008	816335
+"Rwanda"	2008	9708169
+"Seychelles"	2008	90686
+"Somalia"	2008	11369276
+"South Sudan"	2008	9263136
+"Uganda"	2008	31663896
+"United Republic of Tanzania"	2008	43270144
+"Zambia"	2008	13082517
+"Zimbabwe"	2008	13558469
+"Angola"	2008	21759420
+"Cameroon"	2008	18907008
+"Central African Republic"	2008	4345386
+"Chad"	2008	11133861
+"Congo"	2008	4115435
+"Democratic Republic of the Congo"	2008	60373608
+"Equatorial Guinea"	2008	868418
+"Gabon"	2008	1536411
+"Sao Tome and Principe"	2008	166913
+"Algeria"	2008	34860715
+"Egypt"	2008	80953881
+"Libya"	2008	6053078
+"Morocco"	2008	31596855
+"Sudan"	2008	32955496
+"Tunisia"	2008	10407336
+"Botswana"	2008	1946351
+"Lesotho"	2008	1999930
+"Namibia"	2008	2106375
+"South Africa"	2008	50412129
+"Swaziland"	2008	1158897
+"Benin"	2008	8696916
+"Burkina Faso"	2008	14689726
+"Cabo Verde"	2008	491723
+"Côte d'Ivoire"	2008	19497986
+"Gambia"	2008	1588572
+"Ghana"	2008	23298640
+"Guinea"	2008	10323142
+"Guinea-Bissau"	2008	1480841
+"Liberia"	2008	3662993
+"Mali"	2008	14138216
+"Mauritania"	2008	3407541
+"Niger"	2008	15228525
+"Nigeria"	2008	150347390
+"Saint Helena"	2008	4166
+"Senegal"	2008	12203957
+"Sierra Leone"	2008	6165372
+"Togo"	2008	6161796
+"China"	2008	1344415227
+"China, Hong Kong SAR"	2008	6940323
+"China, Macao SAR"	2008	514348
+"China, Taiwan Province of China"	2008	22928526
+"Dem. People's Republic of Korea"	2008	24335146
+"Japan"	2008	128550508
+"Mongolia"	2008	2628131
+"Republic of Korea"	2008	49218985
+"Kazakhstan"	2008	16001176
+"Kyrgyzstan"	2008	5262294
+"Tajikistan"	2008	7309728
+"Turkmenistan"	2008	4935762
+"Uzbekistan"	2008	27715825
+"Afghanistan"	2008	27294031
+"Bangladesh"	2008	148805814
+"Bhutan"	2008	700950
+"India"	2008	1197146906
+"Iran (Islamic Republic of)"	2008	72845542
+"Maldives"	2008	345054
+"Nepal"	2008	26475859
+"Pakistan"	2008	163644603
+"Sri Lanka"	2008	19945832
+"Brunei Darussalam"	2008	379252
+"Cambodia"	2008	13880509
+"Indonesia"	2008	236159276
+"Lao People's Democratic Republic"	2008	6052190
+"Malaysia"	2008	27111069
+"Myanmar"	2008	49479752
+"Philippines"	2008	90751864
+"Singapore"	2008	4851109
+"Thailand"	2008	66545760
+"Timor-Leste"	2008	1078110
+"Viet Nam"	2008	86707801
+"Western Asia"	2008	221686411
+"Armenia"	2008	2908220
+"Azerbaijan"	2008	8821908
+"Bahrain"	2008	1114590
+"Cyprus"	2008	1081563
+"Georgia"	2008	4340514
+"Iraq"	2008	29111417
+"Israel"	2008	7097410
+"Jordan"	2008	6489822
+"Kuwait"	2008	2652340
+"Lebanon"	2008	4111047
+"Oman"	2008	2759014
+"Qatar"	2008	1389342
+"Saudi Arabia"	2008	25940770
+"State of Palestine"	2008	3852310
+"Syrian Arab Republic"	2008	20325443
+"Turkey"	2008	70440032
+"United Arab Emirates"	2008	6894278
+"Yemen"	2008	22356391
+"Belarus"	2008	9507331
+"Bulgaria"	2008	7510331
+"Czechia"	2008	10423794
+"Hungary"	2008	9991201
+"Poland"	2008	38325689
+"Republic of Moldova"	2008	4111440
+"Romania"	2008	20821084
+"Russian Federation"	2008	143083187
+"Slovakia"	2008	5398856
+"Ukraine"	2008	46186430
+"Channel Islands"	2008	157581
+"Denmark"	2008	5497795
+"Estonia"	2008	1339712
+"Faeroe Islands"	2008	48485
+"Finland"	2008	5319902
+"Iceland"	2008	310884
+"Ireland"	2008	4489589
+"Isle of Man"	2008	78534
+"Latvia"	2008	2171881
+"Lithuania"	2008	3214627
+"Norway"	2008	4771409
+"Sweden"	2008	9236890
+"United Kingdom"	2008	62076221
+"Albania"	2008	2991651
+"Andorra"	2008	83861
+"Bosnia and Herzegovina"	2008	3763599
+"Croatia"	2008	4352428
+"Gibraltar"	2008	32732
+"Greece"	2008	11419647
+"Holy See"	2008	794
+"Italy"	2008	59502385
+"Malta"	2008	412128
+"Montenegro"	2008	621205
+"Portugal"	2008	10652099
+"San Marino"	2008	30351
+"Serbia"	2008	9099552
+"Slovenia"	2008	2024538
+"Spain"	2008	45997806
+"TFYR Macedonia"	2008	2067378
+"Austria"	2008	8338453
+"Belgium"	2008	10779173
+"France"	2008	62329567
+"Germany"	2008	81130944
+"Liechtenstein"	2008	35541
+"Luxembourg"	2008	485105
+"Monaco"	2008	35853
+"Netherlands"	2008	16568734
+"Switzerland"	2008	7646113
+"Caribbean"	2008	41083981
+"Anguilla"	2008	13360
+"Antigua and Barbuda"	2008	92478
+"Aruba"	2008	101353
+"Bahamas"	2008	348676
+"Barbados"	2008	277319
+"British Virgin Islands"	2008	25604
+"Caribbean Netherlands"	2008	18153
+"Cayman Islands"	2008	52926
+"Cuba"	2008	11309754
+"Curaçao"	2008	139730
+"Dominica"	2008	71074
+"Dominican Republic"	2008	9636520
+"Grenada"	2008	103930
+"Guadeloupe"	2008	447345
+"Haiti"	2008	9705029
+"Jamaica"	2008	2790122
+"Martinique"	2008	397107
+"Montserrat"	2008	4908
+"Puerto Rico"	2008	3735788
+"Saint Kitts and Nevis"	2008	50332
+"Saint Lucia"	2008	169220
+"Saint Vincent and the Grenadines"	2008	109165
+"Sint Maarten (Dutch part)"	2008	32437
+"Trinidad and Tobago"	2008	1315372
+"Turks and Caicos Islands"	2008	29481
+"United States Virgin Islands"	2008	106798
+"Central America"	2008	155497581
+"Belize"	2008	306165
+"Costa Rica"	2008	4429508
+"El Salvador"	2008	6110301
+"Guatemala"	2008	14006366
+"Honduras"	2008	7872658
+"Mexico"	2008	113661809
+"Nicaragua"	2008	5594506
+"Panama"	2008	3516268
+"South America"	2008	386640742
+"Argentina"	2008	40382389
+"Bolivia (Plurinational State of)"	2008	9599855
+"Brazil"	2008	192979029
+"Chile"	2008	16661942
+"Colombia"	2008	44901544
+"Ecuador"	2008	14447562
+"Falkland Islands (Malvinas)"	2008	2885
+"French Guiana"	2008	222452
+"Guyana"	2008	746314
+"Paraguay"	2008	6047117
+"Peru"	2008	28641980
+"Suriname"	2008	515148
+"Uruguay"	2008	3350824
+"Venezuela (Bolivarian Republic of)"	2008	28141701
+"Bermuda"	2008	64625
+"Canada"	2008	33404548
+"Greenland"	2008	56841
+"Saint Pierre and Miquelon"	2008	6269
+"United States of America"	2008	303374067
+"Australia/New Zealand"	2008	25620818
+"Australia"	2008	21342493
+"New Zealand"	2008	4278325
+"Melanesia"	2008	8604130
+"Fiji"	2008	843340
+"New Caledonia"	2008	243786
+"Papua New Guinea"	2008	6787187
+"Solomon Islands"	2008	504477
+"Vanuatu"	2008	225340
+"Micronesia"	2008	501777
+"Guam"	2008	159035
+"Kiribati"	2008	98440
+"Marshall Islands"	2008	52218
+"Micronesia (Fed. States of)"	2008	104478
+"Nauru"	2008	9947
+"Northern Mariana Islands"	2008	57431
+"Palau"	2008	20228
+"Polynesia"	2008	653041
+"American Samoa"	2008	57030
+"Cook Islands"	2008	19212
+"French Polynesia"	2008	263179
+"Niue"	2008	1639
+"Samoa"	2008	183526
+"Tokelau"	2008	1126
+"Tonga"	2008	103005
+"Tuvalu"	2008	10340
+"Wallis and Futuna Islands"	2008	13984
+"Burundi"	2009	8489031
+"Comoros"	2009	673252
+"Djibouti"	2009	836840
+"Eritrea"	2009	4310334
+"Ethiopia"	2009	85416253
+"Kenya"	2009	40237204
+"Madagascar"	2009	20569121
+"Malawi"	2009	14714602
+"Mauritius"	2009	1244024
+"Mayotte"	2009	202503
+"Mozambique"	2009	23524063
+"Réunion"	2009	823537
+"Rwanda"	2009	9977446
+"Seychelles"	2009	91034
+"Somalia"	2009	11707990
+"South Sudan"	2009	9670667
+"Uganda"	2009	32771895
+"United Republic of Tanzania"	2009	44664231
+"Zambia"	2009	13456417
+"Zimbabwe"	2009	13810599
+"Angola"	2009	22549547
+"Cameroon"	2009	19432541
+"Central African Republic"	2009	4404230
+"Chad"	2009	11502786
+"Congo"	2009	4253712
+"Democratic Republic of the Congo"	2009	62409435
+"Equatorial Guinea"	2009	909111
+"Gabon"	2009	1586754
+"Sao Tome and Principe"	2009	170813
+"Algeria"	2009	35465760
+"Egypt"	2009	82465022
+"Libya"	2009	6121053
+"Morocco"	2009	31989897
+"Sudan"	2009	33650619
+"Tunisia"	2009	10521834
+"Botswana"	2009	1979882
+"Lesotho"	2009	2019209
+"Namibia"	2009	2137040
+"South Africa"	2009	50970818
+"Swaziland"	2009	1180675
+"Benin"	2009	8944706
+"Burkina Faso"	2009	15141099
+"Cabo Verde"	2009	496963
+"Côte d'Ivoire"	2009	19936366
+"Gambia"	2009	1639560
+"Ghana"	2009	23903831
+"Guinea"	2009	10556524
+"Guinea-Bissau"	2009	1517448
+"Liberia"	2009	3811528
+"Mali"	2009	14606597
+"Mauritania"	2009	3506288
+"Niger"	2009	15813913
+"Nigeria"	2009	154402181
+"Saint Helena"	2009	4176
+"Senegal"	2009	12550917
+"Sierra Leone"	2009	6310260
+"Togo"	2009	6330472
+"China"	2009	1352068091
+"China, Hong Kong SAR"	2009	6983272
+"China, Macao SAR"	2009	525313
+"China, Taiwan Province of China"	2009	23017055
+"Dem. People's Republic of Korea"	2009	24463021
+"Japan"	2009	128566659
+"Mongolia"	2009	2668289
+"Republic of Korea"	2009	49379208
+"Kazakhstan"	2009	16184163
+"Kyrgyzstan"	2009	5340781
+"Tajikistan"	2009	7472819
+"Turkmenistan"	2009	5007950
+"Uzbekistan"	2009	28155306
+"Afghanistan"	2009	28004331
+"Bangladesh"	2009	150454708
+"Bhutan"	2009	714458
+"India"	2009	1214270132
+"Iran (Islamic Republic of)"	2009	73687565
+"Maldives"	2009	354501
+"Nepal"	2009	26741103
+"Pakistan"	2009	167049580
+"Sri Lanka"	2009	20075086
+"Brunei Darussalam"	2009	383772
+"Cambodia"	2009	14090208
+"Indonesia"	2009	239340478
+"Lao People's Democratic Republic"	2009	6152036
+"Malaysia"	2009	27605383
+"Myanmar"	2009	49800690
+"Philippines"	2009	92220879
+"Singapore"	2009	4965518
+"Thailand"	2009	66881867
+"Timor-Leste"	2009	1092021
+"Viet Nam"	2009	87565407
+"Western Asia"	2009	227268148
+"Armenia"	2009	2888584
+"Azerbaijan"	2009	8924407
+"Bahrain"	2009	1185029
+"Cyprus"	2009	1098076
+"Georgia"	2009	4287696
+"Iraq"	2009	29894652
+"Israel"	2009	7267895
+"Jordan"	2009	6821116
+"Kuwait"	2009	2818939
+"Lebanon"	2009	4183156
+"Oman"	2009	2882942
+"Qatar"	2009	1590780
+"Saudi Arabia"	2009	26661492
+"State of Palestine"	2009	3957984
+"Syrian Arab Republic"	2009	20824893
+"Turkey"	2009	71339185
+"United Arab Emirates"	2009	7666393
+"Yemen"	2009	22974929
+"Belarus"	2009	9486239
+"Bulgaria"	2009	7456030
+"Czechia"	2009	10486845
+"Hungary"	2009	9958942
+"Poland"	2009	38324870
+"Republic of Moldova"	2009	4096040
+"Romania"	2009	20617955
+"Russian Federation"	2009	143092765
+"Slovakia"	2009	5400719
+"Ukraine"	2009	45994024
+"Channel Islands"	2009	158603
+"Denmark"	2009	5526447
+"Estonia"	2009	1335830
+"Faeroe Islands"	2009	48517
+"Finland"	2009	5342646
+"Iceland"	2009	316086
+"Ireland"	2009	4568064
+"Isle of Man"	2009	79325
+"Latvia"	2009	2145309
+"Lithuania"	2009	3168772
+"Norway"	2009	4827180
+"Sweden"	2009	9313478
+"United Kingdom"	2009	62722607
+"Albania"	2009	2962635
+"Andorra"	2009	84462
+"Bosnia and Herzegovina"	2009	3746561
+"Croatia"	2009	4341084
+"Gibraltar"	2009	32956
+"Greece"	2009	11443828
+"Holy See"	2009	795
+"Italy"	2009	59641853
+"Malta"	2009	414045
+"Montenegro"	2009	622852
+"Portugal"	2009	10660616
+"San Marino"	2009	30723
+"Serbia"	2009	9064756
+"Slovenia"	2009	2035424
+"Spain"	2009	46476072
+"TFYR Macedonia"	2009	2069093
+"Austria"	2009	8370038
+"Belgium"	2009	10860290
+"France"	2009	62687521
+"Germany"	2009	80965612
+"Liechtenstein"	2009	35766
+"Luxembourg"	2009	496279
+"Monaco"	2009	36534
+"Netherlands"	2009	16626926
+"Switzerland"	2009	7737161
+"Caribbean"	2009	41403983
+"Anguilla"	2009	13565
+"Antigua and Barbuda"	2009	93581
+"Aruba"	2009	101453
+"Bahamas"	2009	354856
+"Barbados"	2009	278470
+"British Virgin Islands"	2009	26447
+"Caribbean Netherlands"	2009	19646
+"Cayman Islands"	2009	54279
+"Cuba"	2009	11318602
+"Curaçao"	2009	143933
+"Dominica"	2009	71229
+"Dominican Republic"	2009	9767758
+"Grenada"	2009	104296
+"Guadeloupe"	2009	449333
+"Haiti"	2009	9852870
+"Jamaica"	2009	2804082
+"Martinique"	2009	396204
+"Montserrat"	2009	4923
+"Puerto Rico"	2009	3726331
+"Saint Kitts and Nevis"	2009	50886
+"Saint Lucia"	2009	171022
+"Saint Vincent and the Grenadines"	2009	109253
+"Sint Maarten (Dutch part)"	2009	32632
+"Trinidad and Tobago"	2009	1321618
+"Turks and Caicos Islands"	2009	30245
+"United States Virgin Islands"	2009	106469
+"Central America"	2009	158041891
+"Belize"	2009	313929
+"Costa Rica"	2009	4488263
+"El Salvador"	2009	6137276
+"Guatemala"	2009	14316208
+"Honduras"	2009	8035021
+"Mexico"	2009	115505228
+"Nicaragua"	2009	5666581
+"Panama"	2009	3579385
+"South America"	2009	390967784
+"Argentina"	2009	40799407
+"Bolivia (Plurinational State of)"	2009	9758748
+"Brazil"	2009	194895996
+"Chile"	2009	16829442
+"Colombia"	2009	45416181
+"Ecuador"	2009	14691275
+"Falkland Islands (Malvinas)"	2009	2867
+"French Guiana"	2009	228134
+"Guyana"	2009	745693
+"Paraguay"	2009	6127837
+"Peru"	2009	29001507
+"Suriname"	2009	520619
+"Uruguay"	2009	3362755
+"Venezuela (Bolivarian Republic of)"	2009	28587323
+"Bermuda"	2009	64303
+"Canada"	2009	33789831
+"Greenland"	2009	56728
+"Saint Pierre and Miquelon"	2009	6277
+"United States of America"	2009	306076362
+"Australia/New Zealand"	2009	26062522
+"Australia"	2009	21739040
+"New Zealand"	2009	4323482
+"Melanesia"	2009	8793691
+"Fiji"	2009	851967
+"New Caledonia"	2009	247413
+"Papua New Guinea"	2009	6947447
+"Solomon Islands"	2009	516079
+"Vanuatu"	2009	230785
+"Micronesia"	2009	502040
+"Guam"	2009	159231
+"Kiribati"	2009	100568
+"Marshall Islands"	2009	52320
+"Micronesia (Fed. States of)"	2009	103960
+"Nauru"	2009	9945
+"Northern Mariana Islands"	2009	55674
+"Palau"	2009	20342
+"Polynesia"	2009	656015
+"American Samoa"	2009	56227
+"Cook Islands"	2009	18868
+"French Polynesia"	2009	265581
+"Niue"	2009	1636
+"Samoa"	2009	184826
+"Tokelau"	2009	1126
+"Tonga"	2009	103604
+"Tuvalu"	2009	10441
+"Wallis and Futuna Islands"	2009	13706
+"Burundi"	2010	8766930
+"Comoros"	2010	689692
+"Djibouti"	2010	851146
+"Eritrea"	2010	4390840
+"Ethiopia"	2010	87702670
+"Kenya"	2010	41350152
+"Madagascar"	2010	21151640
+"Malawi"	2010	15167095
+"Mauritius"	2010	1247955
+"Mayotte"	2010	208718
+"Mozambique"	2010	24221405
+"Réunion"	2010	830519
+"Rwanda"	2010	10246842
+"Seychelles"	2010	91405
+"Somalia"	2010	12053223
+"South Sudan"	2010	10067192
+"Uganda"	2010	33915133
+"United Republic of Tanzania"	2010	46098591
+"Zambia"	2010	13850033
+"Zimbabwe"	2010	14086317
+"Angola"	2010	23369131
+"Cameroon"	2010	19970495
+"Central African Republic"	2010	4448525
+"Chad"	2010	11887202
+"Congo"	2010	4386693
+"Democratic Republic of the Congo"	2010	64523263
+"Equatorial Guinea"	2010	951104
+"Gabon"	2010	1640210
+"Sao Tome and Principe"	2010	174776
+"Algeria"	2010	36117637
+"Egypt"	2010	84107606
+"Libya"	2010	6169140
+"Morocco"	2010	32409639
+"Sudan"	2010	34385963
+"Tunisia"	2010	10639931
+"Botswana"	2010	2014866
+"Lesotho"	2010	2040551
+"Namibia"	2010	2173170
+"South Africa"	2010	51584663
+"Swaziland"	2010	1202843
+"Benin"	2010	9199259
+"Burkina Faso"	2010	15605217
+"Cabo Verde"	2010	502384
+"Côte d'Ivoire"	2010	20401331
+"Gambia"	2010	1692149
+"Ghana"	2010	24512104
+"Guinea"	2010	10794170
+"Guinea-Bissau"	2010	1555880
+"Liberia"	2010	3948125
+"Mali"	2010	15075085
+"Mauritania"	2010	3609543
+"Niger"	2010	16425578
+"Nigeria"	2010	158578261
+"Saint Helena"	2010	4177
+"Senegal"	2010	12916229
+"Sierra Leone"	2010	6458720
+"Togo"	2010	6502952
+"China"	2010	1359755102
+"China, Hong Kong SAR"	2010	7025221
+"China, Macao SAR"	2010	536969
+"China, Taiwan Province of China"	2010	23102406
+"Dem. People's Republic of Korea"	2010	24591599
+"Japan"	2010	128551873
+"Mongolia"	2010	2712650
+"Republic of Korea"	2010	49552855
+"Kazakhstan"	2010	16398976
+"Kyrgyzstan"	2010	5422337
+"Tajikistan"	2010	7641630
+"Turkmenistan"	2010	5087210
+"Uzbekistan"	2010	28606294
+"Afghanistan"	2010	28803167
+"Bangladesh"	2010	152149102
+"Bhutan"	2010	727641
+"India"	2010	1230980691
+"Iran (Islamic Republic of)"	2010	74567511
+"Maldives"	2010	364511
+"Nepal"	2010	27023137
+"Pakistan"	2010	170560182
+"Sri Lanka"	2010	20198353
+"Brunei Darussalam"	2010	388662
+"Cambodia"	2010	14308740
+"Indonesia"	2010	242524123
+"Lao People's Democratic Republic"	2010	6246274
+"Malaysia"	2010	28112289
+"Myanmar"	2010	50155896
+"Philippines"	2010	93726624
+"Singapore"	2010	5074252
+"Thailand"	2010	67208808
+"Timor-Leste"	2010	1109591
+"Viet Nam"	2010	88472512
+"Western Asia"	2010	232738024
+"Armenia"	2010	2877311
+"Azerbaijan"	2010	9032457
+"Bahrain"	2010	1240862
+"Cyprus"	2010	1112607
+"Georgia"	2010	4231661
+"Iraq"	2010	30762701
+"Israel"	2010	7425959
+"Jordan"	2010	7182390
+"Kuwait"	2010	2998083
+"Lebanon"	2010	4337141
+"Oman"	2010	3041460
+"Qatar"	2010	1779676
+"Saudi Arabia"	2010	27425676
+"State of Palestine"	2010	4066829
+"Syrian Arab Republic"	2010	21018834
+"Turkey"	2010	72326914
+"United Arab Emirates"	2010	8270684
+"Yemen"	2010	23606779
+"Belarus"	2010	9473071
+"Bulgaria"	2010	7404590
+"Czechia"	2010	10536286
+"Hungary"	2010	9927840
+"Poland"	2010	38323402
+"Republic of Moldova"	2010	4084481
+"Romania"	2010	20440347
+"Russian Federation"	2010	143153869
+"Slovakia"	2010	5404294
+"Ukraine"	2010	45792501
+"Channel Islands"	2010	159581
+"Denmark"	2010	5554844
+"Estonia"	2010	1332102
+"Faeroe Islands"	2010	48550
+"Finland"	2010	5365782
+"Iceland"	2010	320328
+"Ireland"	2010	4626928
+"Isle of Man"	2010	80072
+"Latvia"	2010	2118848
+"Lithuania"	2010	3123803
+"Norway"	2010	4885878
+"Sweden"	2010	9390168
+"United Kingdom"	2010	63306843
+"Albania"	2010	2940525
+"Andorra"	2010	84449
+"Bosnia and Herzegovina"	2010	3722084
+"Croatia"	2010	4328153
+"Gibraltar"	2010	33189
+"Greece"	2010	11446005
+"Holy See"	2010	794
+"Italy"	2010	59729807
+"Malta"	2010	416110
+"Montenegro"	2010	624285
+"Portugal"	2010	10652321
+"San Marino"	2010	31110
+"Serbia"	2010	9029716
+"Slovenia"	2010	2045168
+"Spain"	2010	46788630
+"TFYR Macedonia"	2010	2070739
+"Austria"	2010	8409949
+"Belgium"	2010	10938739
+"France"	2010	63026740
+"Germany"	2010	80894785
+"Liechtenstein"	2010	36003
+"Luxembourg"	2010	507889
+"Monaco"	2010	37094
+"Netherlands"	2010	16682917
+"Switzerland"	2010	7831971
+"Caribbean"	2010	41724731
+"Anguilla"	2010	13769
+"Antigua and Barbuda"	2010	94661
+"Aruba"	2010	101669
+"Bahamas"	2010	360832
+"Barbados"	2010	279569
+"British Virgin Islands"	2010	27224
+"Caribbean Netherlands"	2010	20940
+"Cayman Islands"	2010	55507
+"Cuba"	2010	11333051
+"Curaçao"	2010	147608
+"Dominica"	2010	71440
+"Dominican Republic"	2010	9897985
+"Grenada"	2010	104677
+"Guadeloupe"	2010	450718
+"Haiti"	2010	9999617
+"Jamaica"	2010	2817210
+"Martinique"	2010	394910
+"Montserrat"	2010	4944
+"Puerto Rico"	2010	3716693
+"Saint Kitts and Nevis"	2010	51445
+"Saint Lucia"	2010	172580
+"Saint Vincent and the Grenadines"	2010	109315
+"Sint Maarten (Dutch part)"	2010	33124
+"Trinidad and Tobago"	2010	1328100
+"Turks and Caicos Islands"	2010	30994
+"United States Virgin Islands"	2010	106149
+"Central America"	2010	160556595
+"Belize"	2010	321608
+"Costa Rica"	2010	4545280
+"El Salvador"	2010	6164626
+"Guatemala"	2010	14630417
+"Honduras"	2010	8194778
+"Mexico"	2010	117318941
+"Nicaragua"	2010	5737723
+"Panama"	2010	3643222
+"South America"	2010	395280204
+"Argentina"	2010	41223889
+"Bolivia (Plurinational State of)"	2010	9918242
+"Brazil"	2010	196796269
+"Chile"	2010	16993354
+"Colombia"	2010	45918097
+"Ecuador"	2010	14934690
+"Falkland Islands (Malvinas)"	2010	2852
+"French Guiana"	2010	234181
+"Guyana"	2010	746556
+"Paraguay"	2010	6209877
+"Peru"	2010	29373646
+"Suriname"	2010	526103
+"Uruguay"	2010	3374415
+"Venezuela (Bolivarian Republic of)"	2010	29028033
+"Bermuda"	2010	63956
+"Canada"	2010	34168668
+"Greenland"	2010	56638
+"Saint Pierre and Miquelon"	2010	6274
+"United States of America"	2010	308641391
+"Australia/New Zealand"	2010	26490126
+"Australia"	2010	22120064
+"New Zealand"	2010	4370062
+"Melanesia"	2010	8983311
+"Fiji"	2010	859950
+"New Caledonia"	2010	251037
+"Papua New Guinea"	2010	7108239
+"Solomon Islands"	2010	527790
+"Vanuatu"	2010	236295
+"Micronesia"	2010	503056
+"Guam"	2010	159444
+"Kiribati"	2010	102652
+"Marshall Islands"	2010	52425
+"Micronesia (Fed. States of)"	2010	103616
+"Nauru"	2010	10025
+"Northern Mariana Islands"	2010	54424
+"Palau"	2010	20470
+"Polynesia"	2010	659073
+"American Samoa"	2010	55637
+"Cook Islands"	2010	18545
+"French Polynesia"	2010	267820
+"Niue"	2010	1630
+"Samoa"	2010	186205
+"Tokelau"	2010	1140
+"Tonga"	2010	104137
+"Tuvalu"	2010	10531
+"Wallis and Futuna Islands"	2010	13428
+"Burundi"	2011	9043508
+"Comoros"	2011	706569
+"Djibouti"	2011	865937
+"Eritrea"	2011	4474690
+"Ethiopia"	2011	90046756
+"Kenya"	2011	42486839
+"Madagascar"	2011	21743949
+"Malawi"	2011	15627618
+"Mauritius"	2011	1251023
+"Mayotte"	2011	214923
+"Mozambique"	2011	24939005
+"Réunion"	2011	837304
+"Rwanda"	2011	10516071
+"Seychelles"	2011	91834
+"Somalia"	2011	12404725
+"South Sudan"	2011	10448857
+"Uganda"	2011	35093648
+"United Republic of Tanzania"	2011	47570902
+"Zambia"	2011	14264756
+"Zimbabwe"	2011	14386649
+"Angola"	2011	24218565
+"Cameroon"	2011	20520447
+"Central African Republic"	2011	4476153
+"Chad"	2011	12288651
+"Congo"	2011	4512730
+"Democratic Republic of the Congo"	2011	66713597
+"Equatorial Guinea"	2011	994290
+"Gabon"	2011	1697101
+"Sao Tome and Principe"	2011	178800
+"Algeria"	2011	36819558
+"Egypt"	2011	85897561
+"Libya"	2011	6193501
+"Morocco"	2011	32858823
+"Sudan"	2011	35167314
+"Tunisia"	2011	10761467
+"Botswana"	2011	2051339
+"Lesotho"	2011	2064166
+"Namibia"	2011	2215621
+"South Africa"	2011	52263516
+"Swaziland"	2011	1225258
+"Benin"	2011	9460802
+"Burkina Faso"	2011	16081904
+"Cabo Verde"	2011	508067
+"Côte d'Ivoire"	2011	20895311
+"Gambia"	2011	1746363
+"Ghana"	2011	25121796
+"Guinea"	2011	11035170
+"Guinea-Bissau"	2011	1596154
+"Liberia"	2011	4070167
+"Mali"	2011	15540989
+"Mauritania"	2011	3717672
+"Niger"	2011	17064636
+"Nigeria"	2011	162877076
+"Saint Helena"	2011	4152
+"Senegal"	2011	13300910
+"Sierra Leone"	2011	6611692
+"Togo"	2011	6679282
+"China"	2011	1367480264
+"China, Hong Kong SAR"	2011	7065815
+"China, Macao SAR"	2011	549439
+"China, Taiwan Province of China"	2011	23185010
+"Dem. People's Republic of Korea"	2011	24722298
+"Japan"	2011	128505399
+"Mongolia"	2011	2761516
+"Republic of Korea"	2011	49744659
+"Kazakhstan"	2011	16647380
+"Kyrgyzstan"	2011	5506601
+"Tajikistan"	2011	7815949
+"Turkmenistan"	2011	5174061
+"Uzbekistan"	2011	29068224
+"Afghanistan"	2011	29708599
+"Bangladesh"	2011	153911916
+"Bhutan"	2011	740510
+"India"	2011	1247236029
+"Iran (Islamic Republic of)"	2011	75491582
+"Maldives"	2011	375131
+"Nepal"	2011	27327147
+"Pakistan"	2011	174184265
+"Sri Lanka"	2011	20315017
+"Brunei Darussalam"	2011	394013
+"Cambodia"	2011	14537886
+"Indonesia"	2011	245707511
+"Lao People's Democratic Republic"	2011	6333487
+"Malaysia"	2011	28635128
+"Myanmar"	2011	50553031
+"Philippines"	2011	95277940
+"Singapore"	2011	5176017
+"Thailand"	2011	67530130
+"Timor-Leste"	2011	1131523
+"Viet Nam"	2011	89436644
+"Western Asia"	2011	238050855
+"Armenia"	2011	2875581
+"Azerbaijan"	2011	9146379
+"Bahrain"	2011	1278269
+"Cyprus"	2011	1124835
+"Georgia"	2011	4171256
+"Iraq"	2011	31727053
+"Israel"	2011	7568774
+"Jordan"	2011	7574943
+"Kuwait"	2011	3191051
+"Lebanon"	2011	4588368
+"Oman"	2011	3237268
+"Qatar"	2011	1952054
+"Saudi Arabia"	2011	28238020
+"State of Palestine"	2011	4178875
+"Syrian Arab Republic"	2011	20863993
+"Turkey"	2011	73409455
+"United Arab Emirates"	2011	8672475
+"Yemen"	2011	24252206
+"Belarus"	2011	9468500
+"Bulgaria"	2011	7356213
+"Czechia"	2011	10568715
+"Hungary"	2011	9898204
+"Poland"	2011	38320947
+"Republic of Moldova"	2011	4077368
+"Romania"	2011	20292967
+"Russian Federation"	2011	143263988
+"Slovakia"	2011	5409847
+"Ukraine"	2011	45576307
+"Channel Islands"	2011	160497
+"Denmark"	2011	5582873
+"Estonia"	2011	1328449
+"Faeroe Islands"	2011	48608
+"Finland"	2011	5389242
+"Iceland"	2011	323418
+"Ireland"	2011	4662579
+"Isle of Man"	2011	80759
+"Latvia"	2011	2092493
+"Lithuania"	2011	3079881
+"Norway"	2011	4947595
+"Sweden"	2011	9465892
+"United Kingdom"	2011	63811882
+"Albania"	2011	2926659
+"Andorra"	2011	83751
+"Bosnia and Herzegovina"	2011	3688865
+"Croatia"	2011	4313371
+"Gibraltar"	2011	33405
+"Greece"	2011	11422805
+"Holy See"	2011	796
+"Italy"	2011	59759929
+"Malta"	2011	418367
+"Montenegro"	2011	625466
+"Portugal"	2011	10625330
+"San Marino"	2011	31504
+"Serbia"	2011	8993746
+"Slovenia"	2011	2053436
+"Spain"	2011	46909138
+"TFYR Macedonia"	2011	2072383
+"Austria"	2011	8459864
+"Belgium"	2011	11013083
+"France"	2011	63343577
+"Germany"	2011	80933980
+"Liechtenstein"	2011	36264
+"Luxembourg"	2011	519941
+"Monaco"	2011	37497
+"Netherlands"	2011	16737002
+"Switzerland"	2011	7930421
+"Caribbean"	2011	42047196
+"Anguilla"	2011	13951
+"Antigua and Barbuda"	2011	95719
+"Aruba"	2011	102053
+"Bahamas"	2011	366568
+"Barbados"	2011	280601
+"British Virgin Islands"	2011	27901
+"Caribbean Netherlands"	2011	21994
+"Cayman Islands"	2011	56579
+"Cuba"	2011	11354651
+"Curaçao"	2011	150593
+"Dominica"	2011	71718
+"Dominican Republic"	2011	10027095
+"Grenada"	2011	105075
+"Guadeloupe"	2011	451447
+"Haiti"	2011	10145054
+"Jamaica"	2011	2829493
+"Martinique"	2011	393209
+"Montserrat"	2011	4994
+"Puerto Rico"	2011	3706984
+"Saint Kitts and Nevis"	2011	52006
+"Saint Lucia"	2011	173832
+"Saint Vincent and the Grenadines"	2011	109341
+"Sint Maarten (Dutch part)"	2011	33976
+"Trinidad and Tobago"	2011	1334788
+"Turks and Caicos Islands"	2011	31731
+"United States Virgin Islands"	2011	105843
+"Central America"	2011	163028364
+"Belize"	2011	329192
+"Costa Rica"	2011	4600474
+"El Salvador"	2011	6192560
+"Guatemala"	2011	14948919
+"Honduras"	2011	8351600
+"Mexico"	2011	119090017
+"Nicaragua"	2011	5807820
+"Panama"	2011	3707782
+"South America"	2011	399586154
+"Argentina"	2011	41656879
+"Bolivia (Plurinational State of)"	2011	10078343
+"Brazil"	2011	198686688
+"Chile"	2011	17153357
+"Colombia"	2011	46406646
+"Ecuador"	2011	15177355
+"Falkland Islands (Malvinas)"	2011	2856
+"French Guiana"	2011	240654
+"Guyana"	2011	749100
+"Paraguay"	2011	6293783
+"Peru"	2011	29759989
+"Suriname"	2011	531589
+"Uruguay"	2011	3385624
+"Venezuela (Bolivarian Republic of)"	2011	29463291
+"Bermuda"	2011	63581
+"Canada"	2011	34538622
+"Greenland"	2011	56552
+"Saint Pierre and Miquelon"	2011	6274
+"United States of America"	2011	311051373
+"Australia/New Zealand"	2011	26898164
+"Australia"	2011	22479799
+"New Zealand"	2011	4418365
+"Melanesia"	2011	9172576
+"Fiji"	2011	867086
+"New Caledonia"	2011	254657
+"Papua New Guinea"	2011	7269348
+"Solomon Islands"	2011	539614
+"Vanuatu"	2011	241871
+"Micronesia"	2011	504937
+"Guam"	2011	159678
+"Kiribati"	2011	104656
+"Marshall Islands"	2011	52542
+"Micronesia (Fed. States of)"	2011	103468
+"Nauru"	2011	10208
+"Northern Mariana Islands"	2011	53786
+"Palau"	2011	20599
+"Polynesia"	2011	662200
+"American Samoa"	2011	55320
+"Cook Islands"	2011	18257
+"French Polynesia"	2011	269843
+"Niue"	2011	1630
+"Samoa"	2011	187665
+"Tokelau"	2011	1151
+"Tonga"	2011	104577
+"Tuvalu"	2011	10628
+"Wallis and Futuna Islands"	2011	13129
+"Burundi"	2012	9319710
+"Comoros"	2012	723868
+"Djibouti"	2012	881185
+"Eritrea"	2012	4560977
+"Ethiopia"	2012	92444183
+"Kenya"	2012	43646629
+"Madagascar"	2012	22346573
+"Malawi"	2012	16097305
+"Mauritius"	2012	1253371
+"Mayotte"	2012	221122
+"Mozambique"	2012	25676606
+"Réunion"	2012	843907
+"Rwanda"	2012	10788853
+"Seychelles"	2012	92285
+"Somalia"	2012	12763776
+"South Sudan"	2012	10818258
+"Uganda"	2012	36306796
+"United Republic of Tanzania"	2012	49082997
+"Zambia"	2012	14699937
+"Zimbabwe"	2012	14710826
+"Angola"	2012	25096150
+"Cameroon"	2012	21082383
+"Central African Republic"	2012	4490416
+"Chad"	2012	12705135
+"Congo"	2012	4633363
+"Democratic Republic of the Congo"	2012	68978682
+"Equatorial Guinea"	2012	1038593
+"Gabon"	2012	1756817
+"Sao Tome and Principe"	2012	182889
+"Algeria"	2012	37565847
+"Egypt"	2012	87813257
+"Libya"	2012	6198258
+"Morocco"	2012	33333789
+"Sudan"	2012	35990192
+"Tunisia"	2012	10886668
+"Botswana"	2012	2089315
+"Lesotho"	2012	2089928
+"Namibia"	2012	2263934
+"South Africa"	2012	52998213
+"Swaziland"	2012	1248158
+"Benin"	2012	9729160
+"Burkina Faso"	2012	16571216
+"Cabo Verde"	2012	513979
+"Côte d'Ivoire"	2012	21418603
+"Gambia"	2012	1802125
+"Ghana"	2012	25733049
+"Guinea"	2012	11281469
+"Guinea-Bissau"	2012	1638139
+"Liberia"	2012	4181563
+"Mali"	2012	16006670
+"Mauritania"	2012	3830239
+"Niger"	2012	17731634
+"Nigeria"	2012	167297284
+"Saint Helena"	2012	4117
+"Senegal"	2012	13703513
+"Sierra Leone"	2012	6766103
+"Togo"	2012	6859482
+"China"	2012	1375198619
+"China, Hong Kong SAR"	2012	7106399
+"China, Macao SAR"	2012	562531
+"China, Taiwan Province of China"	2012	23263897
+"Dem. People's Republic of Korea"	2012	24854034
+"Japan"	2012	128426384
+"Mongolia"	2012	2814226
+"Republic of Korea"	2012	49952244
+"Kazakhstan"	2012	16921179
+"Kyrgyzstan"	2012	5594108
+"Tajikistan"	2012	7995062
+"Turkmenistan"	2012	5267839
+"Uzbekistan"	2012	29540819
+"Afghanistan"	2012	30696958
+"Bangladesh"	2012	155727053
+"Bhutan"	2012	752967
+"India"	2012	1263065852
+"Iran (Islamic Republic of)"	2012	76453574
+"Maldives"	2012	386203
+"Nepal"	2012	27649925
+"Pakistan"	2012	177911533
+"Sri Lanka"	2012	20424555
+"Brunei Darussalam"	2012	399748
+"Cambodia"	2012	14776866
+"Indonesia"	2012	248883232
+"Lao People's Democratic Republic"	2012	6415169
+"Malaysia"	2012	29170456
+"Myanmar"	2012	50986514
+"Philippines"	2012	96866642
+"Singapore"	2012	5270958
+"Thailand"	2012	67843979
+"Timor-Leste"	2012	1156760
+"Viet Nam"	2012	90451881
+"Western Asia"	2012	243226565
+"Armenia"	2012	2881922
+"Azerbaijan"	2012	9264917
+"Bahrain"	2012	1300217
+"Cyprus"	2012	1135062
+"Georgia"	2012	4107719
+"Iraq"	2012	32776571
+"Israel"	2012	7699105
+"Jordan"	2012	7992573
+"Kuwait"	2012	3395556
+"Lebanon"	2012	4916404
+"Oman"	2012	3464644
+"Qatar"	2012	2109568
+"Saudi Arabia"	2012	29086357
+"State of Palestine"	2012	4294960
+"Syrian Arab Republic"	2012	20420701
+"Turkey"	2012	74569867
+"United Arab Emirates"	2012	8900453
+"Yemen"	2012	24909969
+"Belarus"	2012	9471730
+"Bulgaria"	2012	7310383
+"Czechia"	2012	10586755
+"Hungary"	2012	9869684
+"Poland"	2012	38317404
+"Republic of Moldova"	2012	4073703
+"Romania"	2012	20171255
+"Russian Federation"	2012	143420597
+"Slovakia"	2012	5417070
+"Ukraine"	2012	45349333
+"Channel Islands"	2012	161358
+"Denmark"	2012	5610660
+"Estonia"	2012	1324934
+"Faeroe Islands"	2012	48666
+"Finland"	2012	5412980
+"Iceland"	2012	325526
+"Ireland"	2012	4678117
+"Isle of Man"	2012	81406
+"Latvia"	2012	2066374
+"Lithuania"	2012	3037246
+"Norway"	2012	5012007
+"Sweden"	2012	9540907
+"United Kingdom"	2012	64250330
+"Albania"	2012	2920039
+"Andorra"	2012	82431
+"Bosnia and Herzegovina"	2012	3648200
+"Croatia"	2012	4296526
+"Gibraltar"	2012	33623
+"Greece"	2012	11378257
+"Holy See"	2012	804
+"Italy"	2012	59733834
+"Malta"	2012	420789
+"Montenegro"	2012	626386
+"Portugal"	2012	10581821
+"San Marino"	2012	31914
+"Serbia"	2012	8956984
+"Slovenia"	2012	2060390
+"Spain"	2012	46857404
+"TFYR Macedonia"	2012	2074036
+"Austria"	2012	8517548
+"Belgium"	2012	11083550
+"France"	2012	63639873
+"Germany"	2012	81066228
+"Liechtenstein"	2012	36545
+"Luxembourg"	2012	532387
+"Monaco"	2012	37783
+"Netherlands"	2012	16789095
+"Switzerland"	2012	8031670
+"Caribbean"	2012	42370627
+"Anguilla"	2012	14129
+"Antigua and Barbuda"	2012	96777
+"Aruba"	2012	102577
+"Bahamas"	2012	372039
+"Barbados"	2012	281585
+"British Virgin Islands"	2012	28509
+"Caribbean Netherlands"	2012	22844
+"Cayman Islands"	2012	57523
+"Cuba"	2012	11382146
+"Curaçao"	2012	152985
+"Dominica"	2012	72044
+"Dominican Republic"	2012	10154950
+"Grenada"	2012	105481
+"Guadeloupe"	2012	451602
+"Haiti"	2012	10289210
+"Jamaica"	2012	2840992
+"Martinique"	2012	391164
+"Montserrat"	2012	5031
+"Puerto Rico"	2012	3697576
+"Saint Kitts and Nevis"	2012	52591
+"Saint Lucia"	2012	174835
+"Saint Vincent and the Grenadines"	2012	109328
+"Sint Maarten (Dutch part)"	2012	35133
+"Trinidad and Tobago"	2012	1341588
+"Turks and Caicos Islands"	2012	32431
+"United States Virgin Islands"	2012	105557
+"Central America"	2012	165467124
+"Belize"	2012	336701
+"Costa Rica"	2012	4654122
+"El Salvador"	2012	6221246
+"Guatemala"	2012	15271056
+"Honduras"	2012	8505646
+"Mexico"	2012	120828307
+"Nicaragua"	2012	5877108
+"Panama"	2012	3772938
+"South America"	2012	403876144
+"Argentina"	2012	42096739
+"Bolivia (Plurinational State of)"	2012	10239004
+"Brazil"	2012	200560983
+"Chile"	2012	17309746
+"Colombia"	2012	46881475
+"Ecuador"	2012	15419666
+"Falkland Islands (Malvinas)"	2012	2858
+"French Guiana"	2012	247463
+"Guyana"	2012	753091
+"Paraguay"	2012	6379219
+"Peru"	2012	30158966
+"Suriname"	2012	537077
+"Uruguay"	2012	3396777
+"Venezuela (Bolivarian Republic of)"	2012	29893080
+"Bermuda"	2012	63179
+"Canada"	2012	34900705
+"Greenland"	2012	56470
+"Saint Pierre and Miquelon"	2012	6276
+"United States of America"	2012	313335423
+"Australia/New Zealand"	2012	27289592
+"Australia"	2012	22821849
+"New Zealand"	2012	4467743
+"Melanesia"	2012	9361723
+"Fiji"	2012	873596
+"New Caledonia"	2012	258275
+"Papua New Guinea"	2012	7430836
+"Solomon Islands"	2012	551531
+"Vanuatu"	2012	247485
+"Micronesia"	2012	507706
+"Guam"	2012	159973
+"Kiribati"	2012	106613
+"Marshall Islands"	2012	52663
+"Micronesia (Fed. States of)"	2012	103503
+"Nauru"	2012	10478
+"Northern Mariana Islands"	2012	53718
+"Palau"	2012	20758
+"Polynesia"	2012	665425
+"American Samoa"	2012	55230
+"Cook Islands"	2012	17996
+"French Polynesia"	2012	271703
+"Niue"	2012	1623
+"Samoa"	2012	189194
+"Tokelau"	2012	1167
+"Tonga"	2012	104951
+"Tuvalu"	2012	10725
+"Wallis and Futuna Islands"	2012	12836
+"Burundi"	2013	9600186
+"Comoros"	2013	741500
+"Djibouti"	2013	896688
+"Eritrea"	2013	4650998
+"Ethiopia"	2013	94887724
+"Kenya"	2013	44826849
+"Madagascar"	2013	22961146
+"Malawi"	2013	16577147
+"Mauritius"	2013	1255290
+"Mayotte"	2013	227351
+"Mozambique"	2013	26434372
+"Réunion"	2013	850400
+"Rwanda"	2013	11065151
+"Seychelles"	2013	92765
+"Somalia"	2013	13132349
+"South Sudan"	2013	11177490
+"Uganda"	2013	37553726
+"United Republic of Tanzania"	2013	50636595
+"Zambia"	2013	15153210
+"Zimbabwe"	2013	15054506
+"Angola"	2013	25998340
+"Cameroon"	2013	21655715
+"Central African Republic"	2013	4499653
+"Chad"	2013	13133589
+"Congo"	2013	4751393
+"Democratic Republic of the Congo"	2013	71316033
+"Equatorial Guinea"	2013	1083746
+"Gabon"	2013	1817271
+"Sao Tome and Principe"	2013	187045
+"Algeria"	2013	38338562
+"Egypt"	2013	89807433
+"Libya"	2013	6195970
+"Morocco"	2013	33824769
+"Sudan"	2013	36849918
+"Tunisia"	2013	11014558
+"Botswana"	2013	2128507
+"Lesotho"	2013	2117361
+"Namibia"	2013	2316520
+"South Africa"	2013	53767396
+"Swaziland"	2013	1271456
+"Benin"	2013	10004451
+"Burkina Faso"	2013	17072723
+"Cabo Verde"	2013	520106
+"Côte d'Ivoire"	2013	21966312
+"Gambia"	2013	1859324
+"Ghana"	2013	26346251
+"Guinea"	2013	11536615
+"Guinea-Bissau"	2013	1681495
+"Liberia"	2013	4286291
+"Mali"	2013	16477818
+"Mauritania"	2013	3946170
+"Niger"	2013	18426372
+"Nigeria"	2013	171829303
+"Saint Helena"	2013	4081
+"Senegal"	2013	14120320
+"Sierra Leone"	2013	6922079
+"Togo"	2013	7042948
+"China"	2013	1382793212
+"China, Hong Kong SAR"	2013	7148571
+"China, Macao SAR"	2013	575841
+"China, Taiwan Province of China"	2013	23339858
+"Dem. People's Republic of Korea"	2013	24985976
+"Japan"	2013	128312920
+"Mongolia"	2013	2869107
+"Republic of Korea"	2013	50169242
+"Kazakhstan"	2013	17207257
+"Kyrgyzstan"	2013	5683808
+"Tajikistan"	2013	8177809
+"Turkmenistan"	2013	5366277
+"Uzbekistan"	2013	30019734
+"Afghanistan"	2013	31731688
+"Bangladesh"	2013	157571292
+"Bhutan"	2013	764961
+"India"	2013	1278562207
+"Iran (Islamic Republic of)"	2013	77435384
+"Maldives"	2013	397397
+"Nepal"	2013	27985310
+"Pakistan"	2013	181712595
+"Sri Lanka"	2013	20527233
+"Brunei Darussalam"	2013	405716
+"Cambodia"	2013	15022692
+"Indonesia"	2013	252032263
+"Lao People's Democratic Republic"	2013	6494557
+"Malaysia"	2013	29706724
+"Myanmar"	2013	51448196
+"Philippines"	2013	98481032
+"Singapore"	2013	5360837
+"Thailand"	2013	68143065
+"Timor-Leste"	2013	1184366
+"Viet Nam"	2013	91497725
+"Western Asia"	2013	248276353
+"Armenia"	2013	2893509
+"Azerbaijan"	2013	9385293
+"Bahrain"	2013	1315411
+"Cyprus"	2013	1143896
+"Georgia"	2013	4045910
+"Iraq"	2013	33883145
+"Israel"	2013	7821105
+"Jordan"	2013	8413464
+"Kuwait"	2013	3598385
+"Lebanon"	2013	5276102
+"Oman"	2013	3711481
+"Qatar"	2013	2250473
+"Saudi Arabia"	2013	29944476
+"State of Palestine"	2013	4414644
+"Syrian Arab Republic"	2013	19809141
+"Turkey"	2013	75787333
+"United Arab Emirates"	2013	9006263
+"Yemen"	2013	25576322
+"Belarus"	2013	9478902
+"Bulgaria"	2013	7266141
+"Czechia"	2013	10594481
+"Hungary"	2013	9841697
+"Poland"	2013	38309451
+"Republic of Moldova"	2013	4071964
+"Romania"	2013	20068201
+"Russian Federation"	2013	143597230
+"Slovakia"	2013	5425130
+"Ukraine"	2013	45115785
+"Channel Islands"	2013	162180
+"Denmark"	2013	5637817
+"Estonia"	2013	1321560
+"Faeroe Islands"	2013	48747
+"Finland"	2013	5436616
+"Iceland"	2013	327029
+"Ireland"	2013	4681967
+"Isle of Man"	2013	82013
+"Latvia"	2013	2040784
+"Lithuania"	2013	2997334
+"Norway"	2013	5077101
+"Sweden"	2013	9615247
+"United Kingdom"	2013	64641110
+"Albania"	2013	2918978
+"Andorra"	2013	80788
+"Bosnia and Herzegovina"	2013	3604999
+"Croatia"	2013	4277806
+"Gibraltar"	2013	33831
+"Greece"	2013	11321300
+"Holy See"	2013	801
+"Italy"	2013	59668000
+"Malta"	2013	423246
+"Montenegro"	2013	627094
+"Portugal"	2013	10527674
+"San Marino"	2013	32303
+"Serbia"	2013	8920215
+"Slovenia"	2013	2066119
+"Spain"	2013	46697553
+"TFYR Macedonia"	2013	2075739
+"Austria"	2013	8577782
+"Belgium"	2013	11151512
+"France"	2013	63919917
+"Germany"	2013	81265139
+"Liechtenstein"	2013	36834
+"Luxembourg"	2013	544721
+"Monaco"	2013	37971
+"Netherlands"	2013	16839699
+"Switzerland"	2013	8132674
+"Caribbean"	2013	42691676
+"Anguilla"	2013	14299
+"Antigua and Barbuda"	2013	97824
+"Aruba"	2013	103187
+"Bahamas"	2013	377240
+"Barbados"	2013	282509
+"British Virgin Islands"	2013	29056
+"Caribbean Netherlands"	2013	23506
+"Cayman Islands"	2013	58371
+"Cuba"	2013	11412167
+"Curaçao"	2013	154895
+"Dominica"	2013	72400
+"Dominican Republic"	2013	10281296
+"Grenada"	2013	105909
+"Guadeloupe"	2013	451338
+"Haiti"	2013	10431776
+"Jamaica"	2013	2851807
+"Martinique"	2013	389050
+"Montserrat"	2013	5068
+"Puerto Rico"	2013	3688723
+"Saint Kitts and Nevis"	2013	53169
+"Saint Lucia"	2013	175660
+"Saint Vincent and the Grenadines"	2013	109320
+"Sint Maarten (Dutch part)"	2013	36439
+"Trinidad and Tobago"	2013	1348248
+"Turks and Caicos Islands"	2013	33108
+"United States Virgin Islands"	2013	105311
+"Central America"	2013	167875536
+"Belize"	2013	344181
+"Costa Rica"	2013	4706401
+"El Salvador"	2013	6250777
+"Guatemala"	2013	15596214
+"Honduras"	2013	8657785
+"Mexico"	2013	122535969
+"Nicaragua"	2013	5945747
+"Panama"	2013	3838462
+"South America"	2013	408131634
+"Argentina"	2013	42539925
+"Bolivia (Plurinational State of)"	2013	10400264
+"Brazil"	2013	202408632
+"Chile"	2013	17462982
+"Colombia"	2013	47342981
+"Ecuador"	2013	15661547
+"Falkland Islands (Malvinas)"	2013	2870
+"French Guiana"	2013	254503
+"Guyana"	2013	758081
+"Paraguay"	2013	6465740
+"Peru"	2013	30565716
+"Suriname"	2013	542540
+"Uruguay"	2013	3408005
+"Venezuela (Bolivarian Republic of)"	2013	30317848
+"Bermuda"	2013	62771
+"Canada"	2013	35255495
+"Greenland"	2013	56414
+"Saint Pierre and Miquelon"	2013	6273
+"United States of America"	2013	315536676
+"Australia/New Zealand"	2013	27668256
+"Australia"	2013	23150729
+"New Zealand"	2013	4517527
+"Melanesia"	2013	9551124
+"Fiji"	2013	879715
+"New Caledonia"	2013	261889
+"Papua New Guinea"	2013	7592865
+"Solomon Islands"	2013	563513
+"Vanuatu"	2013	253142
+"Micronesia"	2013	511151
+"Guam"	2013	160375
+"Kiribati"	2013	108535
+"Marshall Islands"	2013	52793
+"Micronesia (Fed. States of)"	2013	103702
+"Nauru"	2013	10790
+"Northern Mariana Islands"	2013	54036
+"Palau"	2013	20920
+"Polynesia"	2013	668867
+"American Samoa"	2013	55307
+"Cook Islands"	2013	17767
+"French Polynesia"	2013	273528
+"Niue"	2013	1623
+"Samoa"	2013	190757
+"Tokelau"	2013	1187
+"Tonga"	2013	105328
+"Tuvalu"	2013	10819
+"Wallis and Futuna Islands"	2013	12551

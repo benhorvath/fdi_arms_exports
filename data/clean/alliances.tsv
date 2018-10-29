@@ -1,0 +1,591 @@
+"country"	"year"	"alliance"
+"Canada"	2003	1
+"Canada"	2004	1
+"Canada"	2005	1
+"Canada"	2006	1
+"Canada"	2007	1
+"Canada"	2008	1
+"Canada"	2009	1
+"Canada"	2010	1
+"Canada"	2011	1
+"Canada"	2012	1
+"Bahamas"	2003	1
+"Bahamas"	2004	1
+"Bahamas"	2005	1
+"Bahamas"	2006	1
+"Bahamas"	2007	1
+"Bahamas"	2008	1
+"Bahamas"	2009	1
+"Bahamas"	2010	1
+"Bahamas"	2011	1
+"Bahamas"	2012	1
+"Haiti"	2003	1
+"Haiti"	2004	1
+"Haiti"	2005	1
+"Haiti"	2006	1
+"Haiti"	2007	1
+"Haiti"	2008	1
+"Haiti"	2009	1
+"Haiti"	2010	1
+"Haiti"	2011	1
+"Haiti"	2012	1
+"Dominican Republic"	2003	1
+"Dominican Republic"	2004	1
+"Dominican Republic"	2005	1
+"Dominican Republic"	2006	1
+"Dominican Republic"	2007	1
+"Dominican Republic"	2008	1
+"Dominican Republic"	2009	1
+"Dominican Republic"	2010	1
+"Dominican Republic"	2011	1
+"Dominican Republic"	2012	1
+"Jamaica"	2003	1
+"Jamaica"	2004	1
+"Jamaica"	2005	1
+"Jamaica"	2006	1
+"Jamaica"	2007	1
+"Jamaica"	2008	1
+"Jamaica"	2009	1
+"Jamaica"	2010	1
+"Jamaica"	2011	1
+"Jamaica"	2012	1
+"Trinidad and Tobago"	2003	1
+"Trinidad and Tobago"	2004	1
+"Trinidad and Tobago"	2005	1
+"Trinidad and Tobago"	2006	1
+"Trinidad and Tobago"	2007	1
+"Trinidad and Tobago"	2008	1
+"Trinidad and Tobago"	2009	1
+"Trinidad and Tobago"	2010	1
+"Trinidad and Tobago"	2011	1
+"Trinidad and Tobago"	2012	1
+"Barbados"	2003	1
+"Barbados"	2004	1
+"Barbados"	2005	1
+"Barbados"	2006	1
+"Barbados"	2007	1
+"Barbados"	2008	1
+"Barbados"	2009	1
+"Barbados"	2010	1
+"Barbados"	2011	1
+"Barbados"	2012	1
+"Dominica"	2003	1
+"Dominica"	2004	1
+"Dominica"	2005	1
+"Dominica"	2006	1
+"Dominica"	2007	1
+"Dominica"	2008	1
+"Dominica"	2009	1
+"Dominica"	2010	1
+"Dominica"	2011	1
+"Dominica"	2012	1
+"Grenada"	2003	1
+"Grenada"	2004	1
+"Grenada"	2005	1
+"Grenada"	2006	1
+"Grenada"	2007	1
+"Grenada"	2008	1
+"Grenada"	2009	1
+"Grenada"	2010	1
+"Grenada"	2011	1
+"Grenada"	2012	1
+"St. Lucia"	2003	1
+"St. Lucia"	2004	1
+"St. Lucia"	2005	1
+"St. Lucia"	2006	1
+"St. Lucia"	2007	1
+"St. Lucia"	2008	1
+"St. Lucia"	2009	1
+"St. Lucia"	2010	1
+"St. Lucia"	2011	1
+"St. Lucia"	2012	1
+"St. Vincent and the Grenadines"	2003	1
+"St. Vincent and the Grenadines"	2004	1
+"St. Vincent and the Grenadines"	2005	1
+"St. Vincent and the Grenadines"	2006	1
+"St. Vincent and the Grenadines"	2007	1
+"St. Vincent and the Grenadines"	2008	1
+"St. Vincent and the Grenadines"	2009	1
+"St. Vincent and the Grenadines"	2010	1
+"St. Vincent and the Grenadines"	2011	1
+"St. Vincent and the Grenadines"	2012	1
+"Antigua & Barbuda"	2003	1
+"Antigua & Barbuda"	2004	1
+"Antigua & Barbuda"	2005	1
+"Antigua & Barbuda"	2006	1
+"Antigua & Barbuda"	2007	1
+"Antigua & Barbuda"	2008	1
+"Antigua & Barbuda"	2009	1
+"Antigua & Barbuda"	2010	1
+"Antigua & Barbuda"	2011	1
+"Antigua & Barbuda"	2012	1
+"St. Kitts and Nevis"	2003	1
+"St. Kitts and Nevis"	2004	1
+"St. Kitts and Nevis"	2005	1
+"St. Kitts and Nevis"	2006	1
+"St. Kitts and Nevis"	2007	1
+"St. Kitts and Nevis"	2008	1
+"St. Kitts and Nevis"	2009	1
+"St. Kitts and Nevis"	2010	1
+"St. Kitts and Nevis"	2011	1
+"St. Kitts and Nevis"	2012	1
+"Mexico"	2003	1
+"Mexico"	2004	1
+"Mexico"	2005	1
+"Mexico"	2006	1
+"Mexico"	2007	1
+"Mexico"	2008	1
+"Mexico"	2009	1
+"Mexico"	2010	1
+"Mexico"	2011	1
+"Mexico"	2012	1
+"Belize"	2003	1
+"Belize"	2004	1
+"Belize"	2005	1
+"Belize"	2006	1
+"Belize"	2007	1
+"Belize"	2008	1
+"Belize"	2009	1
+"Belize"	2010	1
+"Belize"	2011	1
+"Belize"	2012	1
+"Guatemala"	2003	1
+"Guatemala"	2004	1
+"Guatemala"	2005	1
+"Guatemala"	2006	1
+"Guatemala"	2007	1
+"Guatemala"	2008	1
+"Guatemala"	2009	1
+"Guatemala"	2010	1
+"Guatemala"	2011	1
+"Guatemala"	2012	1
+"Honduras"	2003	1
+"Honduras"	2004	1
+"Honduras"	2005	1
+"Honduras"	2006	1
+"Honduras"	2007	1
+"Honduras"	2008	1
+"Honduras"	2009	1
+"Honduras"	2010	1
+"Honduras"	2011	1
+"Honduras"	2012	1
+"El Salvador"	2003	1
+"El Salvador"	2004	1
+"El Salvador"	2005	1
+"El Salvador"	2006	1
+"El Salvador"	2007	1
+"El Salvador"	2008	1
+"El Salvador"	2009	1
+"El Salvador"	2010	1
+"El Salvador"	2011	1
+"El Salvador"	2012	1
+"Nicaragua"	2003	1
+"Nicaragua"	2004	1
+"Nicaragua"	2005	1
+"Nicaragua"	2006	1
+"Nicaragua"	2007	1
+"Nicaragua"	2008	1
+"Nicaragua"	2009	1
+"Nicaragua"	2010	1
+"Nicaragua"	2011	1
+"Nicaragua"	2012	1
+"Costa Rica"	2003	1
+"Costa Rica"	2004	1
+"Costa Rica"	2005	1
+"Costa Rica"	2006	1
+"Costa Rica"	2007	1
+"Costa Rica"	2008	1
+"Costa Rica"	2009	1
+"Costa Rica"	2010	1
+"Costa Rica"	2011	1
+"Costa Rica"	2012	1
+"Panama"	2003	1
+"Panama"	2004	1
+"Panama"	2005	1
+"Panama"	2006	1
+"Panama"	2007	1
+"Panama"	2008	1
+"Panama"	2009	1
+"Panama"	2010	1
+"Panama"	2011	1
+"Panama"	2012	1
+"Colombia"	2003	1
+"Colombia"	2004	1
+"Colombia"	2005	1
+"Colombia"	2006	1
+"Colombia"	2007	1
+"Colombia"	2008	1
+"Colombia"	2009	1
+"Colombia"	2010	1
+"Colombia"	2011	1
+"Colombia"	2012	1
+"Venezuela"	2003	1
+"Venezuela"	2004	1
+"Venezuela"	2005	1
+"Venezuela"	2006	1
+"Venezuela"	2007	1
+"Venezuela"	2008	1
+"Venezuela"	2009	1
+"Venezuela"	2010	1
+"Venezuela"	2011	1
+"Venezuela"	2012	1
+"Guyana"	2003	1
+"Guyana"	2004	1
+"Guyana"	2005	1
+"Guyana"	2006	1
+"Guyana"	2007	1
+"Guyana"	2008	1
+"Guyana"	2009	1
+"Guyana"	2010	1
+"Guyana"	2011	1
+"Guyana"	2012	1
+"Suriname"	2003	1
+"Suriname"	2004	1
+"Suriname"	2005	1
+"Suriname"	2006	1
+"Suriname"	2007	1
+"Suriname"	2008	1
+"Suriname"	2009	1
+"Suriname"	2010	1
+"Suriname"	2011	1
+"Suriname"	2012	1
+"Ecuador"	2003	1
+"Ecuador"	2004	1
+"Ecuador"	2005	1
+"Ecuador"	2006	1
+"Ecuador"	2007	1
+"Ecuador"	2008	1
+"Ecuador"	2009	1
+"Ecuador"	2010	1
+"Ecuador"	2011	1
+"Ecuador"	2012	1
+"Peru"	2003	1
+"Peru"	2004	1
+"Peru"	2005	1
+"Peru"	2006	1
+"Peru"	2007	1
+"Peru"	2008	1
+"Peru"	2009	1
+"Peru"	2010	1
+"Peru"	2011	1
+"Peru"	2012	1
+"Brazil"	2003	1
+"Brazil"	2004	1
+"Brazil"	2005	1
+"Brazil"	2006	1
+"Brazil"	2007	1
+"Brazil"	2008	1
+"Brazil"	2009	1
+"Brazil"	2010	1
+"Brazil"	2011	1
+"Brazil"	2012	1
+"Bolivia"	2003	1
+"Bolivia"	2004	1
+"Bolivia"	2005	1
+"Bolivia"	2006	1
+"Bolivia"	2007	1
+"Bolivia"	2008	1
+"Bolivia"	2009	1
+"Bolivia"	2010	1
+"Bolivia"	2011	1
+"Bolivia"	2012	1
+"Paraguay"	2003	1
+"Paraguay"	2004	1
+"Paraguay"	2005	1
+"Paraguay"	2006	1
+"Paraguay"	2007	1
+"Paraguay"	2008	1
+"Paraguay"	2009	1
+"Paraguay"	2010	1
+"Paraguay"	2011	1
+"Paraguay"	2012	1
+"Chile"	2003	1
+"Chile"	2004	1
+"Chile"	2005	1
+"Chile"	2006	1
+"Chile"	2007	1
+"Chile"	2008	1
+"Chile"	2009	1
+"Chile"	2010	1
+"Chile"	2011	1
+"Chile"	2012	1
+"Argentina"	2003	1
+"Argentina"	2004	1
+"Argentina"	2005	1
+"Argentina"	2006	1
+"Argentina"	2007	1
+"Argentina"	2008	1
+"Argentina"	2009	1
+"Argentina"	2010	1
+"Argentina"	2011	1
+"Argentina"	2012	1
+"Uruguay"	2003	1
+"Uruguay"	2004	1
+"Uruguay"	2005	1
+"Uruguay"	2006	1
+"Uruguay"	2007	1
+"Uruguay"	2008	1
+"Uruguay"	2009	1
+"Uruguay"	2010	1
+"Uruguay"	2011	1
+"Uruguay"	2012	1
+"Canada"	2003	1
+"Canada"	2004	1
+"Canada"	2005	1
+"Canada"	2006	1
+"Canada"	2007	1
+"Canada"	2008	1
+"Canada"	2009	1
+"Canada"	2010	1
+"Canada"	2011	1
+"Canada"	2012	1
+"United Kingdom"	2003	1
+"United Kingdom"	2004	1
+"United Kingdom"	2005	1
+"United Kingdom"	2006	1
+"United Kingdom"	2007	1
+"United Kingdom"	2008	1
+"United Kingdom"	2009	1
+"United Kingdom"	2010	1
+"United Kingdom"	2011	1
+"United Kingdom"	2012	1
+"Netherlands"	2003	1
+"Netherlands"	2004	1
+"Netherlands"	2005	1
+"Netherlands"	2006	1
+"Netherlands"	2007	1
+"Netherlands"	2008	1
+"Netherlands"	2009	1
+"Netherlands"	2010	1
+"Netherlands"	2011	1
+"Netherlands"	2012	1
+"Belgium"	2003	1
+"Belgium"	2004	1
+"Belgium"	2005	1
+"Belgium"	2006	1
+"Belgium"	2007	1
+"Belgium"	2008	1
+"Belgium"	2009	1
+"Belgium"	2010	1
+"Belgium"	2011	1
+"Belgium"	2012	1
+"Luxembourg"	2003	1
+"Luxembourg"	2004	1
+"Luxembourg"	2005	1
+"Luxembourg"	2006	1
+"Luxembourg"	2007	1
+"Luxembourg"	2008	1
+"Luxembourg"	2009	1
+"Luxembourg"	2010	1
+"Luxembourg"	2011	1
+"Luxembourg"	2012	1
+"France"	2003	1
+"France"	2004	1
+"France"	2005	1
+"France"	2006	1
+"France"	2007	1
+"France"	2008	1
+"France"	2009	1
+"France"	2010	1
+"France"	2011	1
+"France"	2012	1
+"Spain"	2003	1
+"Spain"	2004	1
+"Spain"	2005	1
+"Spain"	2006	1
+"Spain"	2007	1
+"Spain"	2008	1
+"Spain"	2009	1
+"Spain"	2010	1
+"Spain"	2011	1
+"Spain"	2012	1
+"Portugal"	2003	1
+"Portugal"	2004	1
+"Portugal"	2005	1
+"Portugal"	2006	1
+"Portugal"	2007	1
+"Portugal"	2008	1
+"Portugal"	2009	1
+"Portugal"	2010	1
+"Portugal"	2011	1
+"Portugal"	2012	1
+"Germany"	2003	1
+"Germany"	2004	1
+"Germany"	2005	1
+"Germany"	2006	1
+"Germany"	2007	1
+"Germany"	2008	1
+"Germany"	2009	1
+"Germany"	2010	1
+"Germany"	2011	1
+"Germany"	2012	1
+"Poland"	2003	1
+"Poland"	2004	1
+"Poland"	2005	1
+"Poland"	2006	1
+"Poland"	2007	1
+"Poland"	2008	1
+"Poland"	2009	1
+"Poland"	2010	1
+"Poland"	2011	1
+"Poland"	2012	1
+"Hungary"	2003	1
+"Hungary"	2004	1
+"Hungary"	2005	1
+"Hungary"	2006	1
+"Hungary"	2007	1
+"Hungary"	2008	1
+"Hungary"	2009	1
+"Hungary"	2010	1
+"Hungary"	2011	1
+"Hungary"	2012	1
+"Czech Republic"	2003	1
+"Czech Republic"	2004	1
+"Czech Republic"	2005	1
+"Czech Republic"	2006	1
+"Czech Republic"	2007	1
+"Czech Republic"	2008	1
+"Czech Republic"	2009	1
+"Czech Republic"	2010	1
+"Czech Republic"	2011	1
+"Czech Republic"	2012	1
+"Italy"	2003	1
+"Italy"	2004	1
+"Italy"	2005	1
+"Italy"	2006	1
+"Italy"	2007	1
+"Italy"	2008	1
+"Italy"	2009	1
+"Italy"	2010	1
+"Italy"	2011	1
+"Italy"	2012	1
+"Greece"	2003	1
+"Greece"	2004	1
+"Greece"	2005	1
+"Greece"	2006	1
+"Greece"	2007	1
+"Greece"	2008	1
+"Greece"	2009	1
+"Greece"	2010	1
+"Greece"	2011	1
+"Greece"	2012	1
+"Norway"	2003	1
+"Norway"	2004	1
+"Norway"	2005	1
+"Norway"	2006	1
+"Norway"	2007	1
+"Norway"	2008	1
+"Norway"	2009	1
+"Norway"	2010	1
+"Norway"	2011	1
+"Norway"	2012	1
+"Denmark"	2003	1
+"Denmark"	2004	1
+"Denmark"	2005	1
+"Denmark"	2006	1
+"Denmark"	2007	1
+"Denmark"	2008	1
+"Denmark"	2009	1
+"Denmark"	2010	1
+"Denmark"	2011	1
+"Denmark"	2012	1
+"Iceland"	2003	1
+"Iceland"	2004	1
+"Iceland"	2005	1
+"Iceland"	2006	1
+"Iceland"	2007	1
+"Iceland"	2008	1
+"Iceland"	2009	1
+"Iceland"	2010	1
+"Iceland"	2011	1
+"Iceland"	2012	1
+"Turkey"	2003	1
+"Turkey"	2004	1
+"Turkey"	2005	1
+"Turkey"	2006	1
+"Turkey"	2007	1
+"Turkey"	2008	1
+"Turkey"	2009	1
+"Turkey"	2010	1
+"Turkey"	2011	1
+"Turkey"	2012	1
+"Philippines"	2003	1
+"Philippines"	2004	1
+"Philippines"	2005	1
+"Philippines"	2006	1
+"Philippines"	2007	1
+"Philippines"	2008	1
+"Philippines"	2009	1
+"Philippines"	2010	1
+"Philippines"	2011	1
+"Philippines"	2012	1
+"Australia"	2003	1
+"Australia"	2004	1
+"Australia"	2005	1
+"Australia"	2006	1
+"Australia"	2007	1
+"Australia"	2008	1
+"Australia"	2009	1
+"Australia"	2010	1
+"Australia"	2011	1
+"Australia"	2012	1
+"Japan"	2003	1
+"Japan"	2004	1
+"Japan"	2005	1
+"Japan"	2006	1
+"Japan"	2007	1
+"Japan"	2008	1
+"Japan"	2009	1
+"Japan"	2010	1
+"Japan"	2011	1
+"Japan"	2012	1
+"South Korea"	2003	1
+"South Korea"	2004	1
+"South Korea"	2005	1
+"South Korea"	2006	1
+"South Korea"	2007	1
+"South Korea"	2008	1
+"South Korea"	2009	1
+"South Korea"	2010	1
+"South Korea"	2011	1
+"South Korea"	2012	1
+"Canada"	2003	1
+"Canada"	2004	1
+"Canada"	2005	1
+"Canada"	2006	1
+"Canada"	2007	1
+"Canada"	2008	1
+"Canada"	2009	1
+"Canada"	2010	1
+"Canada"	2011	1
+"Canada"	2012	1
+"Pakistan"	2003	1
+"Pakistan"	2004	1
+"Pakistan"	2005	1
+"Pakistan"	2006	1
+"Pakistan"	2007	1
+"Pakistan"	2008	1
+"Pakistan"	2009	1
+"Pakistan"	2010	1
+"Pakistan"	2011	1
+"Pakistan"	2012	1
+"Turkey"	2003	1
+"Turkey"	2004	1
+"Turkey"	2005	1
+"Turkey"	2006	1
+"Turkey"	2007	1
+"Turkey"	2008	1
+"Turkey"	2009	1
+"Turkey"	2010	1
+"Turkey"	2011	1
+"Turkey"	2012	1
+"Liberia"	2003	1
+"Liberia"	2004	1
+"Liberia"	2005	1
+"Liberia"	2006	1
+"Liberia"	2007	1
+"Liberia"	2008	1
+"Liberia"	2009	1
+"Liberia"	2010	1
+"Liberia"	2011	1
+"Liberia"	2012	1
