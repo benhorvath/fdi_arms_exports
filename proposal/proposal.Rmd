@@ -1,8 +1,10 @@
 ---
-title: "Proposal: The Effect of U.S. Military Aid on FDI"
+title: "Proposal: The Effect of U.S.\\ Military Aid on FDI"
 author: "Ben Horvath"
 date: "November 1, 2018"
 output:
+  pdf_document:
+    keep_tex: yes
   html_document:
     theme: null
     css: ../../static/architect.css
@@ -10,13 +12,10 @@ output:
     pandoc_args: [
       "--mathjax", "",
       "--variable", "mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"]
-  pdf_document:
-    keep_tex: yes
-fontsize: 11pt
-geometry: null
+fontsize: 12pt
 fontfamily: mathpazo
 fontfamilyoptions: osf,sc
-linestretch: 1.05
+linestretch: 1.1
 header-includes:
   \usepackage{eulervm}
 ---
@@ -30,34 +29,13 @@ Load libraries:
 
 ```{r, warning=FALSE, message=FALSE}
 library(dplyr)
+library(ggplot2)
+library(Hmisc)
+library(knitr)
 library(readxl)
 library(stringr)
 library(tidyr)
 ```
-
-# TODO
-
-0. Other variables: GDP, distance between capitals, yearly percent gdp growth
-
-
-
-1. Create a mapping to convert some country names to some standard to create more samples
-
-2. Fill in NAs in master dataset with 0s or 1s or some default value
-
-3. Attempt three models: regular `lm`, `plm` for panel data, and the original two-step least squares
-
-
-Note on two-stage least squares:
-
-1. Author first developed a _troop_ model: 
-
-$$troops \sim conflict_{-1} + alliance_{-1} + polity_{-1} + warsaw\_pact_{-1} + cold\_war_{-1} + log(pop_{-1}) + reagan_{-1} + south_korea + vietnam + philippines$$
-2. Then plugged the results of that model into a _trade_ model with some other variables:
-
-$$trade \sim troops + growth_{-1} + gdp_{-1} + distance + alliance_{-1}$$
-
-* both models including intercepts
 
 # Introduction
 
@@ -76,25 +54,49 @@ Nine years later, I am much more sophisticated statistically, and would like to 
 * Andrea Little and David Leblang (2004), 'Military securities: Financial flows and the deployment of US troops,' in _Annual Meeting of the American Political Science Association_, pp. 2-5.
 
 
+# Research Questions
+
+What is the effect of an increase in U.S. arms exports to a country's incoming U.S. foreign direct investment?
+
+
+
+# Cases
+
+Each row will be attributes associated with a single year for a single country: `(year, country)`.
+
+_Note:_ I realize the basic regression we're going to perform is not ideal for this kind of cross-sectional longitudinal data set. It clearly violates, at least, the assumption of independence between observations. However, I'd like to see why it doesn't work for myself, on a concrete dataset I understand. I'd also like to compare this basic regression's performance against the 'proper' way as well as the methodology of the studies referenced above, as a bonus.
+
+
+
+# Response and Explanatory Variables
+
+The response variable is incoming U.S. FDI from a country, measured in USD.
+
+The explanatory variable we are most interested in is U.S. military aid (probably lagged a year).
+
+The studies referenced above include a few control variables, including population, existence of a conflict in that year and country, type of regime (democracy, dictatorship, etc.), alliance statuses, distance between countries, and GDP. These variables will also be lagged a year for modeling.
+
+All of this data is easily assembled, if you know where to look, so I would like to include those as well.
+
+
 
 # Data Sources
 
-FDI data for U.S. outflows can be had from the OECD web site, from 2003 to 2013. These years will bound this study temporally:  https://stats.oecd.org/index.aspx?DataSetCode=FDI_FLOW_PARTNER (2003-2013)
+* __FDI__. The OECD provides FDI data for U.S. outflows on its website, from 2003 to 2013. These years will have to bound this study temporally:  https://stats.oecd.org/index.aspx?DataSetCode=FDI_FLOW_PARTNER
 
-The Stockholm International Peace Research Institute maintains a database of arms transfers: https://www.sipri.org/databases/armstransfers
+* __Arms transfers__. The Stockholm International Peace Research Institute maintains a database of arms transfers: https://www.sipri.org/databases/armstransfers. The value has been 'normalized' by the researchers themselves to account for fluctuations in the market value of weapons as well as allowing comparability between, e.g., 100 assault rifles and 2 large artilleries.
 
-Yearly population for most countries is available from the UN: https://population.un.org/wpp/Download/Standard/Population/
+* __Yearly Population__. This is available for most countries on a yearly basis via the UN: https://population.un.org/wpp/Download/Standard/Population/
 
-Political scientists testing hypotheses on armed conflict frequently use the Armed Conflict dataset, available at: http://ucdp.uu.se/downloads/#d3
+* __Presence of Conflict__. Political scientists testing hypotheses on armed conflict frequently make use of the Armed Conflict dataset, available at: http://ucdp.uu.se/downloads/#d3. This dataset contains a lot of data, but I am just going to use a dichotomous variable: 0 for no conflict, 1 for conflict.
 
-The Polity dataset encodes regime type in a range from perfectly democratic to perfectly autocratic for most countries from 1800 on. Specifically I will use the Polity2 variable: http://www.systemicpeace.org/inscrdata.html,
-user manual: http://www.systemicpeace.org/inscr/p4manualv2017.pdf
+* __Regime Type__. This is available in one of the most popular political science datasets, the Polity dataset. It encodes regime type in a range from perfectly democratic to perfectly autocratic for most countries from 1800 on. Specifically I will use the Polity2 variable: http://www.systemicpeace.org/inscrdata.html. See also the user manual: http://www.systemicpeace.org/inscr/p4manualv2017.pdf.
 
-The Correlates of War project maintains a data set encoding international alliances in 'dyadic' form yearly: http://www.correlatesofwar.org/data-sets/formal-alliances
+* __Alliances__. The Correlates of War project maintains another popular data set encoding international alliances in 'dyadic' form a year-to-year basis: http://www.correlatesofwar.org/data-sets/formal-alliances.
 
-Kristian Gleditsch developed a data set containing the distance between capital cities, which we'll use to proxy distance: http://ksgleditsch.com/data-5.html, using this system of country codes: http://ksgleditsch.com/statelist.html
+* __Distance__. Kristian Gleditsch developed a data set containing the distance between capital cities, which we'll use to proxy distance: http://ksgleditsch.com/data-5.html, using this system of country codes: http://ksgleditsch.com/statelist.html
 
-GDP data is available from the World Bank: https://data.worldbank.org/indicator/NY.GDP.MKTP.CD
+* __GDP__. Where else but the World Bank?:   https://data.worldbank.org/indicator/NY.GDP.MKTP.CD
 
 
 
@@ -102,9 +104,7 @@ GDP data is available from the World Bank: https://data.worldbank.org/indicator/
 
 ## Collecting Data
 
-The goal will be to combine this data in a clean format, for as many countries as possible between 2003 and 2013.
-
-Filter the dataset to only include outflow numbers. The data is a few different currencies; rather than try conversions, I will simply exclude those that aren't in USD. This still leaves plenty of data for analysis.
+The goal will be to combine this data in a clean format, for as many countries as possible between 2003 and 2013. Filter the dataset to only include outflow numbers.
 
 ### FDI
 
@@ -319,23 +319,141 @@ head(df)
 
 
 
-
-# Research Questions
-
-
-
-
-
-# Cases
-
-
-
-# Response and Explanatory Variables
-
-
-
-
-
 # Summary Statistics
+
+
+These are histograms of the two main variables of interest, incoming FDI and arms imports from the U.S. Both are about the same shape, with many countries that have little or no FDI or arms imports, and a long right tail.
+
+```{r}
+par(mfrow=c(1,2))
+hist(df$fdi, main='FDI', col='gray')
+hist(df$arms_exports, main='Arms Imports', col='gray')
+```
+
+It might make sense for modeling purposes to take the logs of these variables, or at least of FDI---though some values are negative:
+
+```{r}
+par(mfrow=c(1,2))
+hist(log(df$fdi), main='FDI Logged', col='gray')
+hist(log(df$arms_exports), main='Arms Imports Logged', col='gray')
+```
+
+The tremendous skew in FDI is obvious by comparing the mean and the median, almost 2 billion and 10 million, respectively. Standard deviation is also very high, almost 700 million.
+
+```{r}
+describe(df$fdi)
+```
+
+It occurrs to me it might make sense to standardize FDI by dividing it by a country's population or GDP---something to experiment with.
+
+Just for fun, let's look at the top 10 recipients of FDI from the U.S. (in millions of USD):
+
+```{r}
+# df %>% group_by(country) %>%
+#     summarize(fdi = sum(fdi)) %>%
+#     mutate(fdi = fdi / 1000000) %>%
+#     arrange(desc(fdi)) %>% 
+#     select(country, fdi) %>% 
+#     top_n(10) %>%
+#     kable
+```
+
+Most are highly developed nations with large GDPs, half of them in Europe.
+
+Arms exports also has a much larger mean than median, the latter at 0, i.e., over half of these year-country units received no arms from the United States.
+
+```{r}
+describe(df$arms_exports)
+```
+
+The top 10 recipients of U.S. arms over this time period:
+
+```{r}
+# df %>% group_by(country) %>%
+#     summarize(arms_exports = sum(arms_exports )) %>%
+#     arrange(desc(arms_exports )) %>% 
+#     select(country,arms_exports ) %>% 
+#     top_n(10) %>%
+#     kable
+```
+
+This all looks correct. Israel is the largest recipient, and Egypt receives tons of aid under the Camp David Treaty that President Carter negotiated.
+
+We can also examine some of the relationships between other independent variables and FDI:
+
+```{r}
+ggplot(data=na.omit(df), aes(x=as.factor(polity2), y=fdi/1000000)) +
+    geom_bar(stat='identity') +
+    ggtitle('FDI by Regime Type')
+```
+
+The above makes it clear that most FDI goes to democratic countries (Polity2 score of 8-10).
+
+The same graph with arms exports suggests more variability, including a more substantial portion to completely autocratic countries (-10). 
+
+```{r}
+ggplot(na.omit(df), aes(x=as.factor(polity2), y=arms_exports)) + 
+    geom_bar(stat='identity') +
+    ggtitle('Arms Exports by Regime Type')
+```
+
+Again, these may benefit by standardizing by population or GDP, or by taking the log.
+
+Finally, let's look at a scatterplot to view the direct relationship between FDI and arms exports:
+
+```{r}
+ggplot(na.omit(df), aes(x=arms_exports, y=fdi)) + 
+    geom_point() +
+    geom_smooth() +
+    ggtitle('Arms Exports and FDI')
+```
+
+Let's try taking the log of both variables:
+
+```{r}
+ggplot(na.omit(df), aes(x=log(arms_exports), y=log(fdi))) + 
+    geom_point() +
+    geom_smooth() +
+    ggtitle('log(Arms Exports) and log(FDI)')
+```
+
+This looks much better! Let's just try one more, dividing both values by population and then taking the log:
+
+```{r}
+ggplot(na.omit(df), aes(x=log(arms_exports/population), y=log(fdi/population))) + 
+    geom_point() +
+    geom_smooth() +
+    ggtitle('Population Standardized log(Arms Exports) and log(FDI)')
+```
+
+BEAUTIFUL. This graph actually looks so good I feel like I've cheated somewhere?! But I'll have to drop population as an explantory variable, though.
+
+
+
+# Misc. Notes
+
+## TODO
+
+1. Create some kind of mapping of countries so that more of them get passed all the joins. 
+
+2. Consider some strategies to fill in missing values. E.g., Polity does not assign a regime for Afghanistan for several years because of the conflict there---what makes sense as a way to handle this reasonably without just dropping the rows?
+
+3. Fill NAs with zeros where necessary.
+
+4. Attempt three models: regular `lm`, `plm` for panel data, and the original two-step least squares, paying particular attention to showing the violation of `lm` assumptions and how the latter two correct this.
+
+## Modeling
+
+Note on two-stage least squares regression:
+
+1. Authors first developed a _troop_ model: 
+
+$$troops \sim conflict_{-1} + alliance_{-1} + polity_{-1} + warsaw\_pact_{-1} + cold\_war_{-1} + log(pop_{-1}) + reagan_{-1} + south_korea + vietnam + philippines$$
+
+2. Then plugged the results of that model into a _trade_ model with some other variables:
+
+$$trade \sim troops + growth_{-1} + gdp_{-1} + distance + alliance_{-1}$$
+
+* both models including intercepts
 
 
