@@ -26,7 +26,7 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{hyperref}
 \hypersetup{unicode=true,
-            pdftitle={Proposal: The Effect of U.S.~Military Aid on FDI},
+            pdftitle={Proposal: The Effect of U.S. Military Aid on FDI},
             pdfauthor={Ben Horvath},
             pdfborder={0 0 0},
             breaklinks=true}
@@ -71,6 +71,7 @@
 \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
 \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
 \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs}
 \usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
@@ -116,7 +117,7 @@
 
 \setlength{\droptitle}{-2em}
 
-  \title{Proposal: The Effect of U.S.~Military Aid on FDI}
+  \title{Proposal: The Effect of U.S. Military Aid on FDI}
     \pretitle{\vspace{\droptitle}\centering\huge}
   \posttitle{\par}
     \author{Ben Horvath}
@@ -700,15 +701,37 @@ Just for fun, let's look at the top 10 recipients of FDI from the U.S.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{# df %>% group_by(country) %>%}
-\CommentTok{#     summarize(fdi = sum(fdi)) %>%}
-\CommentTok{#     mutate(fdi = fdi / 1000000) %>%}
-\CommentTok{#     arrange(desc(fdi)) %>% }
-\CommentTok{#     select(country, fdi) %>% }
-\CommentTok{#     top_n(10) %>%}
-\CommentTok{#     kable}
+\NormalTok{df }\OperatorTok{%>%}\StringTok{ }\KeywordTok{group_by}\NormalTok{(country) }\OperatorTok{%>%}
+\StringTok{    }\KeywordTok{summarise}\NormalTok{(}\DataTypeTok{fdi =} \KeywordTok{sum}\NormalTok{(fdi)) }\OperatorTok{%>%}
+\StringTok{    }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{fdi =}\NormalTok{ fdi }\OperatorTok{/}\StringTok{ }\DecValTok{1000000}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{    }\KeywordTok{arrange}\NormalTok{(}\KeywordTok{desc}\NormalTok{(fdi)) }\OperatorTok{%>%}
+\StringTok{    }\KeywordTok{select}\NormalTok{(country, fdi) }\OperatorTok{%>%}
+\StringTok{    }\KeywordTok{top_n}\NormalTok{(}\DecValTok{10}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{    }\NormalTok{kable}
 \end{Highlighting}
 \end{Shaded}
+
+\begin{verbatim}
+## Selecting by fdi
+\end{verbatim}
+
+\begin{longtable}[]{@{}lr@{}}
+\toprule
+country & fdi\tabularnewline
+\midrule
+\endhead
+Canada & 578682\tabularnewline
+Netherlands & 438331\tabularnewline
+United Kingdom & 299169\tabularnewline
+Luxembourg & 224771\tabularnewline
+Ireland & 166329\tabularnewline
+Bermuda & 134972\tabularnewline
+Switzerland & 102596\tabularnewline
+India & 97402\tabularnewline
+Cayman Islands & 92863\tabularnewline
+Mexico & 73762\tabularnewline
+\bottomrule
+\end{longtable}
 
 Most are highly developed nations with large GDPs, half of them in
 Europe.
@@ -737,53 +760,43 @@ The top 10 recipients of U.S. arms over this time period:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{# df %>% group_by(country) %>%}
-\CommentTok{#     summarize(arms_exports = sum(arms_exports )) %>%}
-\CommentTok{#     arrange(desc(arms_exports )) %>% }
-\CommentTok{#     select(country,arms_exports ) %>% }
-\CommentTok{#     top_n(10) %>%}
-\CommentTok{#     kable}
+\NormalTok{df }\OperatorTok{%>%}\StringTok{ }\KeywordTok{group_by}\NormalTok{(country) }\OperatorTok{%>%}
+\StringTok{    }\KeywordTok{summarise}\NormalTok{(}\DataTypeTok{arms_exports =} \KeywordTok{sum}\NormalTok{(arms_exports )) }\OperatorTok{%>%}
+\StringTok{    }\KeywordTok{arrange}\NormalTok{(}\KeywordTok{desc}\NormalTok{(arms_exports )) }\OperatorTok{%>%}
+\StringTok{    }\KeywordTok{select}\NormalTok{(country,arms_exports ) }\OperatorTok{%>%}
+\StringTok{    }\KeywordTok{top_n}\NormalTok{(}\DecValTok{10}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{    }\NormalTok{kable}
 \end{Highlighting}
 \end{Shaded}
+
+\begin{verbatim}
+## Selecting by arms_exports
+\end{verbatim}
+
+\begin{longtable}[]{@{}lr@{}}
+\toprule
+country & arms\_exports\tabularnewline
+\midrule
+\endhead
+Egypt & 6434\tabularnewline
+Israel & 6090\tabularnewline
+Canada & 5592\tabularnewline
+Australia & 5214\tabularnewline
+Turkey & 4716\tabularnewline
+Pakistan & 4183\tabularnewline
+Japan & 4099\tabularnewline
+Greece & 3839\tabularnewline
+Singapore & 3439\tabularnewline
+United Kingdom & 2627\tabularnewline
+\bottomrule
+\end{longtable}
 
 This all looks correct. Israel is the largest recipient, and Egypt
 receives tons of aid under the Camp David Treaty that President Carter
 negotiated.
 
-We can also examine some of the relationships between other independent
-variables and FDI:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data=}\KeywordTok{na.omit}\NormalTok{(df), }\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x=}\KeywordTok{as.factor}\NormalTok{(polity2), }\DataTypeTok{y=}\NormalTok{fdi}\OperatorTok{/}\DecValTok{1000000}\NormalTok{)) }\OperatorTok{+}
-\StringTok{    }\KeywordTok{geom_bar}\NormalTok{(}\DataTypeTok{stat=}\StringTok{'identity'}\NormalTok{) }\OperatorTok{+}
-\StringTok{    }\KeywordTok{ggtitle}\NormalTok{(}\StringTok{'FDI by Regime Type'}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\includegraphics{proposal_files/figure-latex/unnamed-chunk-19-1.pdf}
-
-The above makes it clear that most FDI goes to democratic countries
-(Polity2 score of 8-10).
-
-The same graph with arms exports suggests more variability, including a
-more substantial portion to completely autocratic countries (-10).
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{na.omit}\NormalTok{(df), }\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x=}\KeywordTok{as.factor}\NormalTok{(polity2), }\DataTypeTok{y=}\NormalTok{arms_exports)) }\OperatorTok{+}\StringTok{ }
-\StringTok{    }\KeywordTok{geom_bar}\NormalTok{(}\DataTypeTok{stat=}\StringTok{'identity'}\NormalTok{) }\OperatorTok{+}
-\StringTok{    }\KeywordTok{ggtitle}\NormalTok{(}\StringTok{'Arms Exports by Regime Type'}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\includegraphics{proposal_files/figure-latex/unnamed-chunk-20-1.pdf}
-
-Again, these may benefit by standardizing by population or GDP, or by
-taking the log.
-
-Finally, let's look at a scatterplot to view the direct relationship
-between FDI and arms exports:
+Let's look at a scatterplot to view the direct relationship between FDI
+and arms exports:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -798,7 +811,7 @@ between FDI and arms exports:
 ## `geom_smooth()` using method = 'gam' and formula 'y ~ s(x, bs = "cs")'
 \end{verbatim}
 
-\includegraphics{proposal_files/figure-latex/unnamed-chunk-21-1.pdf}
+\includegraphics{proposal_files/figure-latex/unnamed-chunk-19-1.pdf}
 
 Let's try taking the log of both variables:
 
@@ -831,7 +844,7 @@ Let's try taking the log of both variables:
 ## Warning: Removed 244 rows containing missing values (geom_point).
 \end{verbatim}
 
-\includegraphics{proposal_files/figure-latex/unnamed-chunk-22-1.pdf}
+\includegraphics{proposal_files/figure-latex/unnamed-chunk-20-1.pdf}
 
 This looks much better! Let's just try one more, dividing both values by
 population and then taking the log:
@@ -865,14 +878,13 @@ population and then taking the log:
 ## Warning: Removed 244 rows containing missing values (geom_point).
 \end{verbatim}
 
-\includegraphics{proposal_files/figure-latex/unnamed-chunk-23-1.pdf}
+\includegraphics{proposal_files/figure-latex/unnamed-chunk-21-1.pdf}
 
 BEAUTIFUL. This graph actually looks so good I feel like I've cheated
-somewhere?! But I'll have to drop population as an explantory variable,
-though.
+somewhere?? Those residuals are going to be so normal.
 
-\hypertarget{misc.-notes}{%
-\section{Misc. Notes}\label{misc.-notes}}
+\hypertarget{misc.-notes-for-ben}{%
+\section{Misc. Notes for Ben}\label{misc.-notes-for-ben}}
 
 \hypertarget{todo}{%
 \subsection{TODO}\label{todo}}
@@ -880,26 +892,26 @@ though.
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  Create some kind of mapping of countries so that more of them get
-  passed all the joins.
+  Create some kind of standardized mapping of countries so that more of
+  them get passed through all the joins.
 \item
   Consider some strategies to fill in missing values. E.g., Polity does
   not assign a regime for Afghanistan for several years because of the
   conflict there---what makes sense as a way to handle this reasonably
   without just dropping the rows?
 \item
-  Fill NAs with zeros where necessary.
+  Fill all NAs with zeros where NA indicates absence of phenomena.
 \item
   Attempt three models: regular \texttt{lm}, \texttt{plm} for panel
-  data, and the original two-step least squares, paying particular
-  attention to showing the violation of \texttt{lm} assumptions and how
-  the latter two correct this.
+  data, and original two-step least square regression of the original
+  studies, paying particular attention to showing the violation of
+  \texttt{lm} assumptions and how the latter two correct this.
 \end{enumerate}
 
 \hypertarget{modeling}{%
 \subsection{Modeling}\label{modeling}}
 
-Note on two-stage least squares regression:
+Note on the original studies' two-stage least squares regression:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -908,7 +920,8 @@ Note on two-stage least squares regression:
   Authors first developed a \emph{troop} model:
 \end{enumerate}
 
-\[troops \sim conflict_{-1} + alliance_{-1} + polity_{-1} + warsaw\_pact_{-1} + cold\_war_{-1} + log(pop_{-1}) + reagan_{-1} + south_korea + vietnam + philippines\]
+\[troops \sim conflict_{-1} + alliance_{-1} + polity_{-1} + warsaw\_pact_{-1} + cold\_war_{-1} +\]
+\[log(pop_{-1}) + reagan_{-1} + south\_korea + vietnam + philippines\]
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -921,11 +934,12 @@ Note on two-stage least squares regression:
 
 \[trade \sim troops + growth_{-1} + gdp_{-1} + distance + alliance_{-1}\]
 
-\begin{itemize}
-\tightlist
-\item
-  both models including intercepts
-\end{itemize}
+where -1 subscript indicates lag of 1 year; both models including
+intercepts.
+
+They do this because they suspect trade and presence of U.S. troops are
+endogenous to eachother; in stastical langauge there will be a
+correlation with model errors.
 
 
 \end{document}
