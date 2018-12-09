@@ -440,3 +440,16 @@ where -1 subscript indicates lag of 1 year; both models including intercepts.
 They do this because they suspect trade and presence of U.S. troops are endogenous to eachother; in stastical langauge there will be a correlation with model errors.
 
 
+### PATRICK
+
+$$log x =  \beta_0 + \beta_1 log(x) = \beta_2 log(y)$$
+
+Need to look at zero inflated models
+
+Tobit model for zero inflated continuous data: https://en.wikipedia.org/wiki/Tobit_model -- in R: https://stats.idre.ucla.edu/r/dae/tobit-models/ 
+
+Arms exports are count data -- cannot be negative. Is FDI? THere are negative FDIs, but is that real? Explanation for negative FDI: https://www.oecd.org/daf/inv/FDI-statistics-explanatory-notes.pdf. Experiment later if FDI can be considered count (for purposes of using poisson).'
+
+Good way to compare the four models: https://stats.idre.ucla.edu/r/dae/zip/ 
+
+

@@ -136,7 +136,7 @@
 "Denmark"	2013	32
 "Dominican Republic"	2003	8
 "Dominican Republic"	2004	35
-"DR Congo"	2009	28
+"Congo, the Democratic Republic of the"	2009	28
 "Ecuador"	2005	4
 "Ecuador"	2009	1
 "Ecuador"	2010	10
@@ -319,7 +319,7 @@
 "Lithuania"	2009	3
 "Lithuania"	2012	0
 "Luxembourg"	2003	1
-"Macedonia (FYROM)"	2006	0
+"Macedonia, the Former Yugoslav Republic of"	2006	0
 "Malaysia"	2003	31
 "Malaysia"	2004	10
 "Malaysia"	2005	2
@@ -468,7 +468,7 @@
 "Saudi Arabia"	2012	394
 "Saudi Arabia"	2013	607
 "Senegal"	2011	2
-"Serbia"	2012	0
+"Serbia, Republic of"	2012	0
 "Seychelles"	2013	1
 "Singapore"	2003	51
 "Singapore"	2004	366
@@ -489,17 +489,17 @@
 "South Africa"	2010	13
 "South Africa"	2011	16
 "South Africa"	2012	9
-"South Korea"	2003	593
-"South Korea"	2004	873
-"South Korea"	2005	619
-"South Korea"	2006	1359
-"South Korea"	2007	1234
-"South Korea"	2008	1121
-"South Korea"	2009	209
-"South Korea"	2010	1220
-"South Korea"	2011	1490
-"South Korea"	2012	979
-"South Korea"	2013	107
+"Korea, Republic of (South Korea)"	2003	593
+"Korea, Republic of (South Korea)"	2004	873
+"Korea, Republic of (South Korea)"	2005	619
+"Korea, Republic of (South Korea)"	2006	1359
+"Korea, Republic of (South Korea)"	2007	1234
+"Korea, Republic of (South Korea)"	2008	1121
+"Korea, Republic of (South Korea)"	2009	209
+"Korea, Republic of (South Korea)"	2010	1220
+"Korea, Republic of (South Korea)"	2011	1490
+"Korea, Republic of (South Korea)"	2012	979
+"Korea, Republic of (South Korea)"	2013	107
 "South Sudan"	2012	0
 "South Sudan"	2013	2
 "Spain"	2003	186
@@ -536,16 +536,16 @@
 "Switzerland"	2011	16
 "Switzerland"	2012	5
 "Switzerland"	2013	2
-"Taiwan"	2003	111
-"Taiwan"	2004	314
-"Taiwan"	2005	642
-"Taiwan"	2006	504
-"Taiwan"	2007	12
-"Taiwan"	2008	11
-"Taiwan"	2010	37
-"Taiwan"	2011	138
-"Taiwan"	2012	424
-"Taiwan"	2013	549
+"Taiwan, Province of China"	2003	111
+"Taiwan, Province of China"	2004	314
+"Taiwan, Province of China"	2005	642
+"Taiwan, Province of China"	2006	504
+"Taiwan, Province of China"	2007	12
+"Taiwan, Province of China"	2008	11
+"Taiwan, Province of China"	2010	37
+"Taiwan, Province of China"	2011	138
+"Taiwan, Province of China"	2012	424
+"Taiwan, Province of China"	2013	549
 "Thailand"	2003	126
 "Thailand"	2004	37
 "Thailand"	2005	17
@@ -586,17 +586,17 @@
 "Turkey"	2011	333
 "Turkey"	2012	1009
 "Turkey"	2013	363
-"UAE"	2003	36
-"UAE"	2004	381
-"UAE"	2005	1260
-"UAE"	2006	996
-"UAE"	2007	472
-"UAE"	2008	677
-"UAE"	2009	394
-"UAE"	2010	153
-"UAE"	2011	863
-"UAE"	2012	923
-"UAE"	2013	1063
+"United Arab Emirates"	2003	36
+"United Arab Emirates"	2004	381
+"United Arab Emirates"	2005	1260
+"United Arab Emirates"	2006	996
+"United Arab Emirates"	2007	472
+"United Arab Emirates"	2008	677
+"United Arab Emirates"	2009	394
+"United Arab Emirates"	2010	153
+"United Arab Emirates"	2011	863
+"United Arab Emirates"	2012	923
+"United Arab Emirates"	2013	1063
 "United Kingdom"	2003	439
 "United Kingdom"	2004	171
 "United Kingdom"	2005	15

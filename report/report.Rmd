@@ -1,0 +1,585 @@
+---
+title: "Modeling the Effect of U.S. Arms Transfers on FDI"
+author: "Ben Horvath"
+date: "December 9, 2018"
+output:
+  pdf_document:
+    keep_tex: yes
+    number_sections: true
+    toc: true
+  html_document:
+    theme: null
+    css: ./static/architect.css
+    template: ./static/architect.html
+    pandoc_args: [
+      "--mathjax", "",
+      "--variable", "mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"]
+fontsize: 11pt
+geometry: null
+fontfamily: mathpazo
+fontfamilyoptions: osf,sc
+linestretch: 1.05
+header-includes:
+  \usepackage{eulervm}
+---
+
+```{r setup, include=FALSE, warning=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# TODO
+# ====
+#
+```
+
+Load libraries:
+
+```{r, warning=FALSE, message=FALSE}
+library(corrplot)
+library(dplyr)
+library(ggplot2)
+library(lme4)
+
+source('../R/multiplot.R')
+```
+
+
+
+# Introduction
+
+<!-- > What is your research question? Why do you care? Why should others care? -->
+
+Corporations and investors can directly invest in enterprises in foreign countries, as opposed to, for instance, portfolio investments like stocks and bonds. This type of investment is called _foreign direct investment_. 
+
+Some countries will have specific advantages over others that attract FDI. Rugman (2001, 157--58) divides them into 'harder' and 'softer' advantages. The former are primarily economic---access to natural resources, a cheaper component of production, etc. Soft locational advantages refer to intangible benefits, e.g., subjective firm director preferences.
+
+Political factors must be counted among locational advantages or disadvantages. When a left-wing government comes to power and threatens nationalization of large industries, investors are likely to become wary. International politics advantages have been well-studied. Many scholars have tested and confirmed the hypothesis that 'alliances have a direct, statistically significant, and large effect on bilateral trade' (Gowa 1994, 54; see also Gowa and Mansfield 1993 and Long 2003). Other scholars have examined FDI in this context. Biglaiser and DeRouen (2007) and Little and Leblong (2004) found that the presence of U.S. troops in a potential host country increases the level of incoming FDI, i.e., is a locational advantage to investors.
+
+This analysis provides another test of the relationship between FDI and international security arrangements: Are U.S. arms transfers, like the presence of the U.S. military itself, a locational advantage to investors? There are a number of major reasons to believe this might be so. First, military aid suggests a friendly atmosphere between the U.S. and potential host. Second, corporate interests often correspond to the interests of the U.S. government: To quote Gilpin, "although the interests of American corporations and U.S. foreign policy objectives have collided on many occasions, a complementarity of interests has tended to exist between the corporations and the U.S. government" (1987, 241). Third, like the presence of U.S. soldiers, military aid can (but does not always) signal stability to investors and a decreased chance of political or econmomic disruption.
+
+To test this theory, I assemble a data set of FDI flows from the U.S., military sales from the U.S., and supplementary variables likely to also affect FDI flows. I run numerous kinds of regressions, in search of the best model of this phenomenon.
+
+
+
+# Data Collection
+
+<!-- > Data: Write about the data from your proposal in text form. Address the following points: -->
+<!-- > * Data collection: Describe how the data were collected. -->
+<!-- > * Cases: What are the cases? (Remember: case = units of observation or units of experiment) -->
+<!-- > * Variables: What are the two variables you will be studying? State the type of each variable. -->
+<!-- > * Type of study: What is the type of study, observational or an experiment? Explain how you’ve arrived at your conclusion using information on the sampling and/or experimental design. -->
+<!-- > * Scope of inference - generalizability: Identify the population of interest, and whether the findings from this analysis can be generalized to that population, or, if not, a subsection of that population. Explain why or why not. Also discuss any potential sources of bias that might prevent generalizability. -->
+<!-- Scope of inference - causality: Can these data be used to establish causal links between the variables of interest? Explain why or why not. -->
+
+I assemble a dataset with the following variables. For full citations, see the references at the end of the paper.
+
+* __FDI__. The OECD provides FDI data for U.S. outflows on its website, from 2003 to 2013. These years will have to bound this study temporally:  https://stats.oecd.org/index.aspx?DataSetCode=FDI_FLOW_PARTNER
+
+* __Arms Transfers__. The Stockholm International Peace Research Institute maintains a database of arms transfers: https://www.sipri.org/databases/armstransfers. The value has been 'normalized' by the researchers themselves to account for fluctuations in the market value of weapons as well as allowing comparability between, e.g., 100 assault rifles and 2 large artilleries.
+
+* __Yearly Population__. This is available for most countries on a yearly basis via the UN: https://population.un.org/wpp/Download/Standard/Population/.
+
+* __Presence of Conflict__. Political scientists testing hypotheses on armed conflict frequently make use of the Armed Conflict dataset, available at: http://ucdp.uu.se/downloads/#d3. This dataset is very detailed in describing exactly the kind of conflict. Instead, I will use a dichotomous variable: 0 for no conflict, 1 for conflict.
+
+* __Regime Type__. This is available in one of the most popular political science datasets, the Polity dataset. It encodes regime type in a range from perfectly democratic to perfectly autocratic for most countries from 1800 on. Specifically I will use the Polity2 variable: http://www.systemicpeace.org/inscrdata.html. See also the user manual: http://www.systemicpeace.org/inscr/p4manualv2017.pdf. Although Polity2 is a scale from -10 to 10, it is often coded to an ordinal variable with the following levels: autocracy, closed anocracy, open anocracy, democracy, full democracy, and conflict/occupied.
+
+* __Alliances__. The Correlates of War project maintains another popular data set encoding international alliances in 'dyadic' form a year-to-year basis: http://www.correlatesofwar.org/data-sets/formal-alliances.
+
+* __Distance__. Kristian Gleditsch developed a data set containing the distance between capital cities, which we'll use to proxy distance: http://ksgleditsch.com/data-5.html, using this system of country codes: http://ksgleditsch.com/statelist.html.
+
+* __GDP__. Where else but the World Bank?:   https://data.worldbank.org/indicator/NY.GDP.MKTP.CD
+
+Assembling the complete dataset is a lengthy affair. I have contained it to the `R/clean_data.R` script.
+
+I will simply load the finished dataset here:
+
+```{r}
+df <- read.csv('../data/clean/master_dataset.tsv', sep='\t', 
+               stringsAsFactors=FALSE)
+```
+
+The primary barrier to assembling this data set was standardization of country names. For instance, in some data sets, the Vatican is called 'Holy See (Vatican City State),' and others, simply 'Holy See.' There are also occasional typos, e.g., 'NewZealand' or 'SriLanka' rather than 'New Zealand' or 'Sri Lanka.' Countries with accented characters posed another issue.
+
+Tediously and laborously, I standardized each seperate piece of the dataset by hand.
+
+There is one more wrinkle to deal with. Since we are testing a theory about how agents react to information, our dataset has to reflect that agent's knowledge. To do so, each of the independent variables is lagged by one year. Thus, for instance, the model will be trained on data from 2003 to predict a country's `fdi` in 2004:
+
+```{r, warning=FALSE, message=FALSE}
+df <- df %>%
+    group_by(country) %>%
+    mutate(population=lag(population, order_by=year),
+           arms_exports=lag(arms_exports, order_by=year),
+           conflict=lag(conflict, order_by=year),
+           alliance=lag(alliance, order_by=year),
+           gdp=lag(gdp, order_by=year),
+           gdp_perc_growth=lag(gdp_perc_growth, order_by=year),
+           regime_type=lag(regime_type, order_by=year)) %>%
+    na.omit()
+```
+
+
+The accurately evaluate each of the models, I partition the data into a train (70 percent) and test set, where the last three years of the dataset for each country are loaded into the test set (approximately 30 percent of the observations). This will provide a good measure of how well the developed models can be expected to perform in reality.
+
+```{r}
+train <- df %>% filter(year <= 2010)
+
+test <- df %>% filter(year > 2010)
+
+write.table(train, '../data/clean/train.tsv', sep='\t', 
+            row.names=FALSE)
+write.table(test, '../data/clean/test.tsv', sep='\t', 
+            row.names=FALSE)
+
+# remove from workspace for now to keep models uncontaminated
+rm(test)
+```
+
+
+
+# Exploratory Data Analysis
+
+<!-- > Exploratory data analysis: Perform relevant descriptive statistics, including summary statistics and visualization of the data. Also address what the exploratory data analysis suggests about your research question. -->
+
+The training set:
+
+```{r}
+head(train)
+```
+
+To get a sense of the range of our dependent variable and main independent variable:
+
+```{r}
+mean(train$fdi)
+```
+
+Mean `fdi` is about \$1.5 billion, while median is only \$1 million. This suggests a _highly_ right-skewed distribution:
+
+```{r}
+quantile(train$fdi, c(0, .25, 0.5, 0.75, 0.9, 0.95, 0.99))
+```
+
+The min of `fdi` is -\$20 billion. Negative FDI seems puzzling. According to this World Bank explainer <https://www.oecd.org/daf/inv/FDI-statistics-explanatory-notes.pdf>,
+
+> FDI financial transactions may be negative for three reasons. First, if there is disinvestment in assets— that is, the direct investor sells its interest in a direct investment enterprise to a third party or back to the direct investment enterprise. Second, if the parent borrowed money from its affiliate or if the affiliate paid off a loan from its direct investor. Third, if reinvested earnings are negative. Reinvested earnings are negative if the affiliate loses money or if the dividends paid out to the direct investor are greater than the income recorded in that period.
+Negative FDI positions largely result when the loans from the affiliate to its parent exceed the loans and equity capital given by the parent to the affiliate. This is most likely to occur when FDI statistics are presented by partner country.
+
+W see that middle 50 percent of the variable is between $0 and about \$150 million, and the top one percent is greater than \$30 billion.
+
+`arms_exports` is less extreme, but still skewed,
+
+```{r}
+mean(train$arms_exports)
+quantile(train$arms_exports, c(0, .25, 0.5, 0.75, 0.9, 0.95, 0.99))
+```
+
+with a mean of 44.5 arms units and a median of 0. The 25th and 75th percentile ranges from 0 to 5. The largest arms transfers seem to make up about 5 percent of the total data set.
+
+
+## Distributions
+
+For the first pass through, let's examine the distributions of the numeric variables:
+
+```{r, warning=FALSE, message=FALSE}
+hist_fdi <- ggplot(train, aes(x=fdi)) + 
+    geom_histogram(colour="black", fill="white")
+
+hist_arms <- ggplot(train, aes(x=arms_exports)) + 
+    geom_histogram(colour="black", fill="white")
+
+hist_pop <- ggplot(train, aes(x=population)) + 
+    geom_histogram(colour="black", fill="white")
+
+hist_conflict <- ggplot(train, aes(x=conflict)) + 
+    geom_histogram(colour="black", fill="white")
+
+hist_alliance <- ggplot(train, aes(x=alliance)) + 
+    geom_histogram(colour="black", fill="white")
+
+hist_dist <- ggplot(train, aes(x=km_dist)) + 
+    geom_histogram(colour="black", fill="white")
+
+hist_gdp <- ggplot(train, aes(x=gdp)) + 
+    geom_histogram(colour="black", fill="white")
+
+hist_growth <- ggplot(train, aes(x=gdp_perc_growth)) + 
+    geom_histogram(colour="black", fill="white")
+
+multiplot(hist_fdi, hist_arms, hist_pop, hist_conflict, 
+          hist_alliance, hist_dist, hist_gdp, hist_growth, cols=2)
+```
+
+From these graphs it's clear there are only two 'nice' variables: `km_dist` and `gdp_perc_growth`, i.e., the only ones approximately normally distributed. 
+
+Our two most important variables, `fdi` and `arms_exports` are not normal. They are both _zero-inflated_, with a long right tail. This may prove challenging in attempting to model them with standard linear regression models.
+
+The variables `gdp` and `population` also have a small central tendancy, with a long right tail. This reflects the facts that most countries have a small population with a correspondingly small GDP, and that there are a few large countries with large GDPs.
+
+The remaining variables are dichotomous, `conflict` and `alliance`. These plots show that of the observations in the dataset are in a time of peace, and that most of them did not occur when the country was allied with the United States.
+
+## Associations and Correlations
+
+The next step is to take a look for associations in our data set:
+
+```{r, warning=FALSE, message=FALSE}
+scat_arms <- ggplot(train, aes(x=arms_exports, y=fdi)) +
+    geom_point() +
+    geom_smooth()
+
+scat_pop <- ggplot(train, aes(x=population, y=fdi)) +
+    geom_point() +
+    geom_smooth()
+
+scat_conflict <- ggplot(train, aes(x=conflict, y=fdi)) +
+    geom_point() +
+    geom_smooth()
+
+scat_alliance <- ggplot(train, aes(x=alliance, y=fdi)) +
+    geom_point() +
+    geom_smooth()
+
+scat_dist <- ggplot(train, aes(x=km_dist, y=fdi)) +
+    geom_point() +
+    geom_smooth()
+
+scat_gdp <- ggplot(train, aes(x=gdp, y=fdi)) +
+    geom_point() +
+    geom_smooth()
+
+scat_growth <- ggplot(train, aes(x=gdp_perc_growth, y=fdi)) +
+    geom_point() +
+    geom_smooth()
+
+multiplot(scat_arms, scat_pop, scat_conflict, scat_alliance,
+          scat_dist, scat_gdp, scat_growth, cols=2)
+
+```
+
+Few of these variables are related to `fdi` in a straight-forward, linear way.
+
+Examining our categorical variable, `regime_type`:
+
+```{r}
+ggplot(train, aes(x=regime_type, y=fdi)) +
+    geom_boxplot()
+```
+
+Full democracies obviously receive the most FDI from the U.S., though autocratic countries still receive some. Conflicted/occupied countries recieve very little, which makes sense.
+
+The correlation matrix of the numerical variables:
+
+```{r}
+train_cor <- cor(train[, c(3:10)])
+corrplot(train_cor, type='lower', method='number')
+```
+
+Unfortunately for us, the correlation between the main variables of interest, `fdi` and `arms_exports` is low, only 0.13. But, more hopefully, few of our other independent variables are correlated, which protects our regression models from multicollinearity. 
+
+The two worrying relationships are `gdp` and `population`, which are naturally related, with a correlation of 0.43. More interesting is the correlation of `km_dist` and `alliance` (-0.54). This suggests that the further away a country is from the U.S., the less likely an alliance with it will be. This is a non-intuitive finding, but could possibly be explained by the difficulty of projecting force across large distances and oceans.
+
+
+
+
+# Statistical Analysis
+
+<!-- > If your data fails some conditions and you can’t use a theoretical method, then you should use simulation. If you can use both methods, then you should use both methods. It is your responsibility to figure out the appropriate methodology. -->
+<!-- > * Check conditions -->
+<!-- > * Theoretical inference (if possible) - hypothesis test and confidence interval -->
+<!-- > * Simulation based inference - hypothesis test and confidence interval -->
+<!-- > * Brief description of methodology that reflects your conceptual understanding -->
+
+## Inferential Statistics
+
+We've seen above that appears to be some kind of association between `regime_type` and `fdi`, where democracies recieve more trade that autocracies. This section will formally test this, with the hypotheses,
+
+> $H_0$: $\mu_{democracy} - \mu_{autocracy} = 0$
+
+> $H_1$: $\mu_{democracy} - \mu_{autocracy} > 0$
+
+I create two vectors of `fdi`, one for country-years where the country was either a 'full democracy' or a 'democracy,' and the other for countries that are an 'autocracy' or 'closed anonocracy'. Their respective distributions are plotted:
+
+
+```{r, warning=FALSE, message=FALSE}
+x_demo <- train %>%
+    filter(regime_type == 'full democracy' | regime_type == 'democracy') %>% 
+    select(fdi)
+
+x_auto <- train %>%
+    filter(regime_type == 'autocracy' | regime_type == 'closed anocracy') %>%
+    select(fdi)
+    
+hist_demo <- ggplot(x_demo, aes(x=fdi)) +
+    geom_histogram(colour="black", fill="white")
+hist_auto <- ggplot(x_auto, aes(x=fdi)) +
+    geom_histogram(colour="black", fill="white")
+
+multiplot(hist_demo, hist_auto, cols=2)
+```
+
+The distributions suggest a couple of problems with this hypothesis test: Because of the skew and the excessive zeros, neither of these aappear close to a normal distribution. Additionally, the variance of the two samples are quite different. I will carry on the hypothesis test, with the hopes that the larger sample size and R's `var.equal=FALSE` setting will carry me through:
+
+```{r}
+t.test(x_demo$fdi, x_auto$fdi, alternative = 'greater', 
+       var.equal = FALSE, conf.level = 0.95)
+```
+
+This $t$-test suggetss we should reject the null hypothesis $H_0$ that the mean `fdi` is the same for both democracies and autocracies. This result is very significant, with a $t$-value of 5.62! The larger sample size, the obvious difference between the two means, and the high significance allay most of my concerns about the violations noted above.
+
+
+## Models
+
+Each model will be evaluated by its performance on the test set. The metric to optimize is means squared errors (MSE):
+
+```{r}
+mse <- function(m) mean(resid(m)^2)
+
+calc_r2 <- function(y, y_hat) {
+    rss <- sum((y_hat - y)^2)
+    tss <- sum((y - mean(y_hat))^2)
+    return(1 - (rss/tss))
+}
+```
+
+Attention will be paid to $R^2$ as well as performance on training set. However, $MSE$ on the test set is the ultimate metric to minimize.
+
+
+### $M_0$: Predicting the Mean
+
+For the purposes of establishing a baseline performance, the first model will be a dummy model, predicting only the average FDI.
+
+```{r}
+m0 <- lm(fdi ~ 1, train)
+mse(m0)
+```
+
+With an MSE of over $4e^{19}$ (dollars), this model performs very poorly. Hopefully further iteration can improve it.
+
+
+### $M_1$: Linear Model, All Variables
+
+```{r}
+m1 <- lm(fdi ~ population + arms_exports + as.factor(conflict) + 
+               as.factor(alliance) + km_dist + gdp + gdp_perc_growth +
+               as.factor(regime_type), train)
+summary(m1)
+mse(m1)
+```
+
+Unfortunately, this straight-forward model is not impressive. It's $MSE$ is only about 16 percent better than predicting the average, though it does have a not-insigifnicant $R^2$ of .15, and the $F$-statistic says it is statistically different from the dummy model. Only GDP and regime type of full democracy are significant.
+
+Examine the residuals:
+
+```{r}
+par(mfrow=c(1,2))
+hist(resid(m1))
+qqnorm(rstandard(m1)); qqline(rstandard(m1), col = 2)
+```
+
+It is clear that the residuals are not as normal as we like. The model performs well for 'typical' observations (between the -2 and 2 quartiles), but fails for the quite a few outlying observations. Both positive and negative outliers have large residuals.
+
+```{r}
+train_m1 <- train
+train_m1$resid <- resid(m1)
+train_m1 <- train_m1 %>% 
+    mutate(resid_abs = abs(resid)) %>%
+    arrange(desc(resid))
+head(train_m1[c('year', 'country', 'resid')], 10)
+```
+
+Interestingly, the top cases with the most errors are all developed Western European allies of the U.S. $M_1$ seems to have over-estimated all of these cases, by tens of billions of dollars. Future work might try to account for this by including an variable indicating if a country is West European, or perhaps an (original) member of NATO. 
+
+Looking at the cases with negative residuals, the model seems to have especially underestimated China and Japan, especially in the period around the 2007--2008 years (during which there was an economic crisis). My intuition is that some state of affairs---an overheated world market, perhaps?---was directing excessive FDI to these countries over this time period.
+
+
+### $M_2$: Linear Model, Some Logged Variables
+
+One way to make these residuals more normal is to log some of the poorly behaved independent variables, transforming them to normality:
+
+```{r}
+m2 <- lm(fdi ~ log(population) + arms_exports + as.factor(conflict) + 
+               as.factor(alliance) + km_dist + log(gdp) + gdp_perc_growth +
+               as.factor(regime_type), train)
+summary(m2)
+mse(m2)
+```
+
+Logging these variables is actually slightly worse than $M_1$, both in terms of $MSE$ and $R^2$. In terms of variable significance, the only change is that alliance becomes significant at $p = .10$. Residuals are almost identical to previous model.
+
+
+### $M_4$: Mixed Effects Panel Model
+
+This model attempts to deal with the fact that most subjects (states) are sampled from multiple times. This kind of _mixed effects_ models adds a second layer of _random_ effects to the usual regression model's _fixed_ effects. This model will include country as a variable in an attempt to quantify specific differences due to a country that are not attributable to the independent variables.
+
+```{r}
+m4 <- lmer(fdi ~ population + arms_exports + as.factor(conflict) + 
+                 as.factor(alliance) + km_dist + gdp + gdp_perc_growth +
+                 as.factor(regime_type) + (1 | country), train)
+summary(m4)
+mse(m4)
+```
+
+From the $MSE$ output, we see this model surpasses all previous models. While it has 60 percent less error than the dummy model, this is still a disappointing result.
+
+However, with this model, `arms_exports` becomes significant at $p = 0.05$! GDP and full democracy also retain strongly significant effects.
+
+The residual plots are also more encouraging, as many of the extreme errors we saw in $M_1$ disappear. The theoretical quartile plot shows a much nicer distribution, with less of a deviation from normality: 
+
+```{r}
+par(mfrow=c(1,2))
+hist(resid(m4))
+qqnorm(scale(resid(m4))); qqline(scale(resid(m4)), col='2')
+```
+
+Examining some of the largest residuals:
+
+```{r}
+train_m4 <- train
+train_m4$resid <- resid(m4)
+train_m4 <- train_m4 %>% 
+    mutate(resid_abs = abs(resid)) %>%
+    arrange(desc(resid))
+head(train_m4[c('year', 'country')], 10)
+```
+
+Like $M_1$, the Netherlands and the U.K. are present, but appear less often. Other countries include Ireland, Australia, and Canada. Again, this suggests we might want to add a variable for either NATO or English-speaking countries. 
+
+
+### $M_5$: Mixed Effects + NATO
+
+Since it's relatively simple, let's create a dummy variable indicating whether a country was a founding member of NATO:
+
+```{r}
+nato <- c('Belgium', 'Canada', 'Denmark', 'France', 'Iceland', 'Italy',
+          'Luxembourg', 'Netherlands', 'Norway', 'Portugal',
+          'United Kingdom', 'United States')
+
+train_m5 <- train %>%
+    mutate(nato=ifelse(country %in% nato, 1, 0))
+
+m5 <- lmer(fdi ~ population + arms_exports + as.factor(conflict) + 
+                 as.factor(alliance) + km_dist + gdp + gdp_perc_growth +
+                 as.factor(regime_type) + as.factor(nato) +  (1 | country),
+           data=train_m5)
+summary(m5)
+mse(m5)
+```
+
+Adding `nato` is very consequential to the model. Our main independent variable `arms_exports` becomes stronger and more significant ($p < .05$). GDP becomes less significant, though it is still significant at $p < 0.05$. Population becomes more signficiant but is 'less important.' The full democracy indicator, becomes insignicant at .05 and the magnitude of its coefficient decreases.
+
+Interestingly, $MSE$ is a smidge higher than $M_4$, by 0.2 percent. The residual graphs appear mostly the same as those of $M_4$, unfortunately.
+
+
+# Model Evaluations
+
+We can now test our five models: $M_0, M_1, M_2, M_4,$ and $M_5$. Reload the test data and get their predictions for the `test` set:
+
+```{r}
+test <- read.csv('../data/clean/test.tsv', sep='\t', 
+                 stringsAsFactors=FALSE)
+
+test_m0 <- test %>% 
+    mutate(pred = predict(m0, test),
+           resid = fdi - pred)
+test_m1 <- test %>% 
+    mutate(pred = predict(m1, test),
+           resid = fdi - pred)
+test_m2 <- test %>% 
+    mutate(pred = predict(m2, test),
+           resid = fdi - pred)
+test_m4 <- test %>% 
+    mutate(pred = predict(m4, test),
+           resid = fdi - pred)
+
+# add NATO variable in
+test_m5 <- test %>%
+    mutate(nato=ifelse(country %in% nato, 1, 0))
+test_m5$pred <- predict(m5, test_m5)
+test_m5$resid <- test_m5$fdi - test_m5$pred
+```
+
+Calculate $MSE$ for each (divided by $10^18$ for readability), in order of best to worst:
+
+```{r}
+paste('M_5:', mean(test_m5$resid^2) / 10^18)
+paste('M_4:', mean(test_m4$resid^2) / 10^18)
+paste('M_2:', mean(test_m2$resid^2) / 10^18)
+paste('M_1:', mean(test_m1$resid^2) / 10^18)
+paste('M_0:', mean(test_m0$resid^2) / 10^18)
+```
+
+Immediately it is clear that the mixed models, $M_4$ and $M_5$, have far superior performance over the 'vanilla' $M_1$ and $M_2$ (with logged variables). Interesting, even though adding the `nato` varible slightly decreased in-sample $MSE$, it improved the model on the test set.
+
+Calculate $R^2$, from best to worst:
+
+```{r}
+paste('M_5:', calc_r2(test_m5$fdi, test_m5$pred))
+paste('M_4:', calc_r2(test_m4$fdi, test_m4$pred))
+paste('M_2:', calc_r2(test_m2$fdi, test_m2$pred))
+paste('M_1:', calc_r2(test_m1$fdi, test_m1$pred))
+paste('M_0:', calc_r2(test_m0$fdi, test_m0$pred))
+```
+
+The ordering is the same as in the case of $MSE$. I am pleased to see the best model explains 71 percent of the variable in FDI! (Interesting, the in-sample $R^2$ for $M_5$ is only .60.)
+
+One final look at residuals, $M_5$ on the test sample:
+
+```{r}
+par(mfrow=c(1,2))
+hist(test_m5$resid)
+qqnorm(scale(test_m5$resid)); qqline(scale(test_m5$resid), col='2')
+```
+
+The residuals histogram appears about the same shape as that of the training set. However, the theoretical quartile plot is not as smooth---their are many observations where predicted value is very far from their actual value:
+
+```{r}
+test_m5 <- arrange(test_m5, desc(resid))
+head(test_m5[c('year', 'country', 'resid')], 10)
+```
+
+Among the largest residuals are the same old culprites: Netherlands, the U.K., etc. 
+
+
+
+# Conclusion
+
+<!-- > Write a brief summary of your findings without repeating your statements from earlier. Also include a discussion of what you have learned about your research question and the data you collected. You may also want to include ideas for possible future research. -->
+
+This paper confirmed the relationship between U.S. arms sales and U.S. FDI. The more arms a country recieves from the U.S. in year $t$, the more direct foreign investment the country will recieve from the U.S. the next year $t+1$. This relationship is statistically significant, even when controlling for other well-known factors influencing FDI. 
+
+I tested a number of models and found that mixed effect models best capture the data set. The final model $M_5$ performed the best, explaining 71 percent of variation in `fdi` on the test dataset.
+
+Other significant predictors of FDI include GDP and NATO membership, which both have a positive effect ($p < .05$). Regime type of full democracy also have a positive relationship with FDI at a lower significance ($p < .10$).
+
+Future work should focus on finding an explanation for why every substantial model tended to overestimated FDI in a handful of highly developed NATO allies, especially the Netherlands and the U.K. Introducing the NATO membership as a variable helped, but was insufficient to fully account for it.
+
+
+
+# References
+
+Biglaiser, Glen, and Karl DeRouen, Jr. "Following the Flag: Troop Deployment and U.S. Foreign Direct Investment." _International Studies Quarterly_ 51 (4): 835-854.
+
+Center for Systemic Peace. 2017. _Polity IV Annual Time-Series, 1800-2017_ (Excel file). <[http://www.systemicpeace.org/inscrdata.html](http://www.systemicpeace.org/inscrdata.html)>.
+
+Gibler, Douglas M. 2013. "Formal Alliances (v4.1)." _International Military Alliances, 1648-2008_. CQ Press. <[http://www.correlatesofwar.org/data-sets/formal-alliances](http://www.correlatesofwar.org/data-sets/formal-alliances)>.
+
+Gilpin, Robert. 1987. _The Political Economy of International Relations_. Princeton: Princeton University Press.
+
+Gleditsch, Kristian Skrede. _Distance Between Capital Cities." <[http://ksgleditsch.com/data-5.html](http://ksgleditsch.com/data-5.html)>.
+
+Gleditsch, Nils Petter, Peter Wallensteen, Mikael Eriksson, Margareta Sollenberg, and Håvard Strand. 2002. "Armed Conflict 1946-2001: A New Dataset." _Journal of Peace Research_ 39 (5).
+
+Gowa, Joanne. 1994. _Allies, Adversaries, and International Trade_. Princeton: Princeton University Press.
+
+Gowa, Joanne, and Edward D. Mansfield. 1993. "Power Politics and International Trade." _American Political Science Review_ 87 (2): 408-20.
+
+Little, Andrea, and David Leblang. 2004. "Military Securities: Financial Flows and the Deployment of U.S. Troops." In _Annual Meeting of the American Political Science Association_. Chicago, IL.
+
+Long, Andrew G. 2003. "Defense Pacts and International Trade." _Journal of Peace Research_ 40 (5): 537–52.
+
+OECD. 2018. "Benchmark definition, 3rd edition (BMD3): Foreign direct investment: flows by partner country." _OECD International Direct Investment Statistics_ (database). <link>
+
+Rugman, Alan M., and Alain Verbeke. 2001. "Location, Competitiveness, and the Multinational Enterprise." In _Oxford Handbook of International Business_, ed. A. M. Rugman and T. L. Brewer. Oxford: Oxford University Press.
+
+Stockholm International Peace Research Institute. _Arms Transfers Database_. <[https://www.sipri.org/databases/armstransfers](https://www.sipri.org/databases/armstransfers)>.
+
+World Bank. 2018. _National Accounts Data_. <[https://data.worldbank.org/indicator/NY.GDP.MKTP.CD](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD)>.
+
+United Nations, Population Division. "Total Population - Both Sexes" (Excel file). <[https://population.un.org/wpp/Download/Standard/Population/](https://population.un.org/wpp/Download/Standard/Population/)>. 

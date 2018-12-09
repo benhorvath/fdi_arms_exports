@@ -36,7 +36,7 @@
 "Switzerland"	6629
 "Spain"	6105
 "Portugal"	5759
-"Germany (Prussia)"	6739
+"Germany"	6739
 "German Federal Republic"	6432
 "German Democratic Republic"	6739
 "Poland"	7197
@@ -49,21 +49,21 @@
 "Italy/Sardinia"	7273
 "Malta"	7727
 "Albania"	7777
-"Serbia"	7635
-"Serbia"	7635
-"Montenegro"	7654
-"Montenegro"	7654
-"Macedonia (Former Yugoslav Republic of)"	7833
+"Serbia, Republic of"	7635
+"Serbia, Republic of"	7635
+"Montenegro, Republic of"	7654
+"Montenegro, Republic of"	7654
+"Macedonia, the Former Yugoslav Republic of"	7833
 "Croatia"	7275
 "Yugoslavia"	7635
-"Bosnia-Herzegovina"	7562
+"Bosnia and Herzegovina"	7562
 "Slovenia"	7122
 "Greece"	8244
 "Cyprus"	9119
 "Bulgaria"	7952
-"Moldova"	7970
-"Rumania"	8006
-"Russia (Soviet Union)"	7873
+"Moldova, Republic of"	7970
+"Romania"	8006
+"Russian Federation"	7873
 "Estonia"	6981
 "Estonia"	6981
 "Latvia"	7126
@@ -71,7 +71,7 @@
 "Lithuania"	7320
 "Lithuania"	7320
 "Ukraine"	7858
-"Belarus (Byelorussia)"	7500
+"Belarus"	7500
 "Armenia"	9418
 "Georgia"	9433
 "Azerbaijan"	9708
@@ -91,7 +91,7 @@
 "Niger"	8166
 "Cote D’Ivoire"	7994
 "Guinea"	7073
-"Burkina Faso (Upper Volta)"	7917
+"Burkina Faso"	7917
 "Liberia"	7527
 "Sierra Leone"	7172
 "Ghana"	8540
@@ -102,10 +102,10 @@
 "Central African Republic"	10209
 "Chad"	9338
 "Congo"	10484
-"Congo, Democratic Republic of (Zaire)"	10484
+"Congo, the Democratic Republic of the"	10484
 "Uganda"	11674
 "Kenya"	12116
-"Tanzania/Tanganyika"	12691
+"Tanzania, United Republic of"	12691
 "Zanzibar"	12686
 "Burundi"	11623
 "Rwanda"	11557
@@ -116,7 +116,7 @@
 "Angola"	10578
 "Mozambique"	13403
 "Zambia"	12375
-"Zimbabwe (Rhodesia)"	12721
+"Zimbabwe"	12721
 "Malawi"	12690
 "South Africa"	12989
 "Transvaal"	12989
@@ -125,7 +125,7 @@
 "Lesotho"	13123
 "Botswana"	12730
 "Swaziland"	13287
-"Madagascar (Malagasy)"	14225
+"Madagascar"	14225
 "Madagascar"	14225
 "Comoros"	13383
 "Mauritius"	15205
@@ -138,17 +138,17 @@
 "Libya"	7874
 "Libya"	7874
 "Sudan"	10577
-"Iran (Persia)"	10233
-"Turkey (Ottoman Empire)"	8782
+"Iran, Islamic Republic of"	10233
+"Turkey"	8782
 "Iraq"	9988
 "Egypt"	9355
 "Egypt"	9355
-"Syria"	9470
+"Syrian Arab Republic"	9470
 "Lebanon"	9411
 "Jordan"	9598
 "Israel"	9449
 "Saudi Arabia"	10899
-"Yemen (Arab Republic of Yemen)"	11457
+"Yemen"	11457
 "Yemen, Peoples Republic of	30:11:1967	21:05:1990
 690	KUW	Kuwait	19:06:1961	31:12:2017
 692	BAH	Bahrain	15:08:1971	31:12:2017
@@ -168,26 +168,26 @@
 713	TAW	Taiwan	08:12:1949	31:12:2017
 730	KOR	Korea	01:01:1816	22:08:1910
 731	PRK	Korea, Peoples Republic of"	11758
-"Korea, Republic of"	11218
+"Korea, Republic of (South Korea)"	11218
 "Japan"	10960
 "India"	12106
 "Bhutan"	12551
 "Pakistan"	11431
 "Bangladesh"	13000
-"Myanmar (Burma)"	13859
-"Myanmar (Burma)"	13859
-"Sri Lanka (Ceylon)"	14469
+"Myanmar"	13859
+"Myanmar"	13859
+"Sri Lanka"	14469
 "Nepal"	12451
 "Maldives"	14406
 "Thailand"	14227
-"Cambodia (Kampuchea)"	14454
-"Laos"	13787
+"Cambodia"	14454
+"Lao People's Democratic Republic"	13787
 "Vietnam (Annam/Cochin China/Tonkin)"	14478
-"Vietnam, Democratic Republic of"	13347
+"Vietnam"	13347
 "Vietnam, Republic of"	14478
 "Malaysia"	15350
 "Singapore"	15572
-"Brunei"	15040
+"Brunei Darussalam"	15040
 "Philippines"	13834
 "Indonesia"	16337
 "East Timor"	15953
@@ -196,3 +196,22 @@
 "New Zealand"	14058
 "Solomon Islands"	13473
 "Fiji"	12479
+"Afghanistan"	11132
+"Bahrain"	10951
+"China"	11139
+"Italy"	7212
+"Kazakhstan"	9536
+"Korea, Dem. People's Republic of (North Korea)"	11035
+"Kuwait"	10518
+"Kyrgyzstan"	10475
+"Mongolia"	10350
+"Oman"	11655
+"Qatar"	11091
+"Suriname"	4278
+"Taiwan, Province of China"	12639
+"Tajikistan"	10715
+"Turkmenistan"	10321
+"United Arab Emirates"	11339
+"United Kingdom"	5894
+"United States"	0
+"Uzbekistan"	10458
